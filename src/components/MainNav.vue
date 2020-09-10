@@ -1,5 +1,5 @@
 <template>
-  <nav class="main-nav">
+  <nav class="main-nav" :style="{display: active ? '': 'none'}">
       <ul class="main-nav__list">
           <li v-for="(item, index) in menu" :key="index" class="main-nav__item" >
               <g-link class="main-nav__link" :to="item.path">{{item.name}}</g-link>
@@ -11,6 +11,7 @@
 <script>
 export default {
   name: 'MainNav',
+  props: ['active'],
   data () {
     return {
       menu: [
@@ -29,7 +30,11 @@ export default {
 </script>
 
 <style lang="scss">
-.main-nav__list {
+.main-nav{
+  @media (min-width: 768px){
+    display: block !important;
+  }
+  .main-nav__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -137,5 +142,6 @@ export default {
     color: var(--purple);
   }
   }
+}
 }
 </style>

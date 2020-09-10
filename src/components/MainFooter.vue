@@ -1,6 +1,7 @@
 <template>
     <Container tag="footer" fullScreen class="main-footer">
-        <Container tag="div" class="content">
+        <g-image class="img-responsive main-footer__logo" src="~/assets/web/img/footer/footer.svg" alt="Footer logo" />
+        <Container tag="div" class="main-footer__content">
                     
         </Container> 
     </Container>
@@ -15,21 +16,17 @@ export default {
 </script>
 <style lang="scss" scoped>
   .main-footer {
-    min-height: 50vh;
     background: rgb(46, 57, 46);
     position: relative;
-
-    &:before {
-      content: '';
-      background-image: url(../assets/web/img/footer/footer.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
+    padding: 0;
+    
+    &__logo{
       position: absolute;
-      display: flex;
-      height: 220px;
-      right: 0;
-      left: 0;
-      top: -150px
+      bottom: 49vh;
+    }
+
+    &__content{
+      min-height: 50vh;
     }
   }
 </style>

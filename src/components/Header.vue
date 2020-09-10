@@ -6,12 +6,12 @@
               <g-image alt="Agrodreams logo" src="~/assets/web/img/header/logo.svg" width="200" />
           </g-link>
           <Hamburger 
-            @click.native="menuOpen = !menuOpen" 
+            @click.native="toggleMenu()" 
             :active="menuOpen" 
             class="header__hamburger" 
           />
         </header>
-        <MainNav class="header__nav"></MainNav>
+        <MainNav :active="mainNav" class="header__nav"></MainNav>
       </Container>
   </Container>
 </template>
@@ -28,6 +28,7 @@ export default {
     data(){
       return {
         menuOpen: false,
+        mainNav: false,
         windowTop: 0,
         headerOpen: true
       }
@@ -46,6 +47,16 @@ export default {
             this.headerOpen = false
           }
           this.windowTop = window.top.scrollY;
+        }
+      },
+      toggleMenu() {
+        this.menuOpen = !this.menuOpen
+        if (!this.mainNav) {
+          this.mainNav = true
+        } else {
+          setTimeout(() => {
+            this.mainNav = false
+          }, 500);
         }
       }
     },
@@ -67,21 +78,32 @@ export default {
       transition: height .0s, background-color .3s;
       transition: .2s ease-in;
       transition-delay: .3s;
-        &.header-open{
-          top: 0;
-        }
 
-      @media (min-width: 768px){
+      &.header-open {
+        top: 0;
+      }
+
+      @media (min-width: 768px) {
         height: $headerHeight;
       }
     }
 
     .header__nav {
-      display: none;
-
       @media(min-width: 768px) {
         display: flex;
         align-items: center;
+      }
+    }
+
+    .header--close {
+      @media (max-width: 767px){
+        .header__nav{
+          margin-top: 1.5em;
+          animation: fadeOut;
+          animation-duration: .25s;
+          animation-delay: .25s;
+          animation-fill-mode: forwards;
+        }
       }
     }
 
@@ -96,7 +118,7 @@ export default {
           margin-top: 1.5em;
           animation: fadeIn;
           animation-duration: .3s;
-          animation-delay: .2s;
+          animation-delay: .5s;
           animation-fill-mode: forwards;
         }
       }
@@ -117,7 +139,7 @@ export default {
         height: 50px;
       }
 
-      @media (min-width: 768px){
+      @media (min-width: 768px) {
         height: 70px;
         display: flex;
         align-items: center;
@@ -132,25 +154,25 @@ export default {
       height: 50px;
       padding: 0;
 
-      .header__logo{
+      .header__logo {
         max-width: 50%;
         display: flex;
         align-items: center;
 
-        img{
+        img {
           max-width: 100%;
           height: 40px;
           width: auto;
         }
       }
 
-      @media (min-width: 768px){
+      @media (min-width: 768px) {
         height: $headerHeight;
 
-        .header__logo{
+        .header__logo {
           max-width: 100%;
 
-          img{
+          img {
             height: 50px;
             width: auto;
           }
@@ -193,7 +215,7 @@ export default {
       right: 0;
       top: 0px;
 
-      @media (min-width: 768px){
+      @media (min-width: 768px) {
         top: 10px
       }
 
@@ -209,6 +231,16 @@ export default {
 
       to {
         opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
       }
     }
 </style>

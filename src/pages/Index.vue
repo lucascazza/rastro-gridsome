@@ -31,9 +31,11 @@
               <h2 class="web__subtitle">Diversidad de trabajos</h2>
               <p class="web__text">No nos encerramos y apostamos a todo tipo de trabajo siempre que haya que ser
                 creativos.</p>
-              <div class="home-paso__content--options">
+              <div class="home-paso__content--options" v-if="!isMobile">
                 <ul class="options-list">
-                  <li class="options-list__item"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  <li class="options-list__item" :class="{'active' : stepTrabajos == 1}" @click="stepTrabajos = 1">
+                    
+                    <svg class="svg-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
                       style="enable-background:new 0 0 50 50;" xml:space="preserve">
                       <g>
@@ -43,8 +45,8 @@
 			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
                         </g>
                       </g>
-                    </svg>Modelados 3d</li>
-                  <li class="options-list__item"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    </svg>
+                    <svg class="svg-2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
                       style="enable-background:new 0 0 50 50;" xml:space="preserve">
                       <g>
@@ -54,8 +56,12 @@
 			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
                         </g>
                       </g>
-                    </svg>Vfx</li>
-                  <li class="options-list__item"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    </svg>
+
+                    Modelados 3d</li>
+                  <li class="options-list__item" :class="{'active' : stepTrabajos == 2}" @click="stepTrabajos = 2">
+                                      
+                    <svg class="svg-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
                       style="enable-background:new 0 0 50 50;" xml:space="preserve">
                       <g>
@@ -65,8 +71,8 @@
 			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
                         </g>
                       </g>
-                    </svg>Diseño grafico</li>
-                  <li class="options-list__item"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    </svg>
+                    <svg class="svg-2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
                       style="enable-background:new 0 0 50 50;" xml:space="preserve">
                       <g>
@@ -76,12 +82,135 @@
 			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
                         </g>
                       </g>
-                    </svg>Otra categoria</li>
+                    </svg>
+
+                    VFX</li>
+                  <li class="options-list__item" :class="{'active' : stepTrabajos == 3}" @click="stepTrabajos = 3">
+                    
+                    <svg class="svg-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                      style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
+			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
+			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
+                        </g>
+                      </g>
+                    </svg>
+                    <svg class="svg-2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                      style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
+			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
+			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
+                        </g>
+                      </g>
+                    </svg>
+                    
+                    Diseño grafico</li>
+                  <li class="options-list__item" :class="{'active' : stepTrabajos == 4}" @click="stepTrabajos = 4">
+                    
+                    <svg class="svg-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                      style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
+			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
+			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
+                        </g>
+                      </g>
+                    </svg>
+                    <svg class="svg-2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                      style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
+			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
+			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
+                        </g>
+                      </g>
+                    </svg>
+                    
+                    Otra categoria</li>
                 </ul>
               </div>
             </div>
             <div class="home-paso__content--img">
               <g-image src="~/assets/web/img/home/trabajos/prueba.jpg" alt="Trabajo 3d" />
+            </div>
+            <div v-if="isMobile" class="home-paso__content--options-mobile">
+              <div class="item-col">
+                <div class="item-col__item active">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                  style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
+			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
+			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
+                    </g>
+                  </g>
+                </svg>
+                <p>3D</p>
+                </div>
+              </div>
+
+              <div class="item-col">
+                <div class="item-col__item">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                  style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
+			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
+			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
+                    </g>
+                  </g>
+                </svg>
+                <p>VFX</p>
+                </div>
+              </div>
+
+              <div class="item-col">
+                <div class="item-col__item">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                  style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
+			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
+			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
+                    </g>
+                  </g>
+                </svg>
+                <p>Gráfico</p>
+                </div>
+              </div>
+
+              <div class="item-col">
+                <div class="item-col__item">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                  style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
+			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
+			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
+                    </g>
+                  </g>
+                </svg>
+                <p>Web</p>
+                </div>
+              </div>
             </div>
           </Container>
         </Container>
@@ -209,7 +338,6 @@ import Container from '~/components/Container.vue'
 import FooterContent from '~/components/FooterContent'
 import MainFooter from "~/components/MainFooter"
 import ScrollTopButton from '~/components/ScrollTopButton'
-// import Scrollama from 'vue-scrollama'
 export default {
   components: {
     Container,
@@ -243,7 +371,8 @@ export default {
   data(){
     return{
       windowWidth: 0,
-      stepHome: 'a'
+      stepHome: 'a',
+      stepTrabajos: 1
     }
   },
   methods: {
@@ -252,7 +381,7 @@ export default {
     },
     handleResize() {
       if(process.isClient){
-        this.windowWidth = document.body.clientWidth;
+        this.windowWidth = window.innerWidth;
       }
     },
     selectStep(step){

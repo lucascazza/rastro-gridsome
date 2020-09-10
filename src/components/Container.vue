@@ -51,13 +51,13 @@ export default {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 910px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1100px;
   }
 }
 

@@ -17,25 +17,48 @@ export default {
 </script>
 <style lang="scss">
 .content-footer {
-  min-height: 70vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10vh;
 
-  &__content{
+  &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .web__subtitle{
+    .web__subtitle {
       margin-bottom: 1rem;
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       text-transform: uppercase;
+      text-align: center;
     }
 
-    .web__button{
+    .web__button {
       font-family: sprintSansMedium;
     }
+  }
+
+
+  @media (min-width: 768px) {
+    margin-bottom: 15vh;
+  }
+
+  @media (min-width: 992px) {
+    min-height: 60vh;
+    margin-bottom: 20vh;
+
+    &__content {
+      .web__subtitle {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 80vh;
+    margin-bottom: 30vh;
   }
 }
 </style>

@@ -38,15 +38,17 @@ body {
   overflow-x: hidden;
 }
 
-.web {
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: #fff;
+}
 
-  p,
-  h1,
-  h2,
-  h3 {
-    margin: 0;
-    color: #fff;
-  }
+.container--fullScreen .container{
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .web__title {
@@ -57,12 +59,22 @@ body {
 
 .web__subtitle {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-family: 'SprintSansBold';
 }
 
-.web__text {
+.web__text,
+p {
+  font-family: 'SprintSansRegular';
   color: var(--light-grey);
+  font-size: .85rem;
+}
+
+@media (min-width: 400px){
+  .web__text,
+  p{
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -71,11 +83,11 @@ body {
   }
 
   .web__subtitle {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
   }
 
   .web__text {
-    font-size: 1.1rem;      
+    font-size: 1.2rem;      
   }
 }
 
@@ -89,7 +101,7 @@ body {
   }
 
   .web__text {
-    font-size: 1.2rem;     
+    font-size: 1.25rem;     
   }
 }
 
@@ -103,7 +115,7 @@ body {
   }
 
   .web__text {
-    font-size: 1.25rem;      
+    font-size: 1.3rem;      
   }
 }
 
