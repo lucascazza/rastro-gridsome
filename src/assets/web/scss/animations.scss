@@ -1,0 +1,111 @@
+@keyframes slideInSmall {
+    from {
+        transform: translate3d(0, 1%, 0);
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes slideInUp {
+    from {
+        transform: translate3d(0, 20%, 0);
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInDown {
+  from {
+      transform: translate3d(0, -20%, 0);
+      visibility: visible;
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
+}
+@keyframes circularOrbit {
+  from { transform: rotate(0deg) translateX(6px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(6px) rotate(-360deg); }
+}
+@keyframes circularOrbitDelay {
+  20% { transform: rotate(0deg) translateX(6px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(6px) rotate(-360deg); }
+}
+@keyframes circularOrbitBackwards {
+  from   { transform: rotate(360deg) translateX(6px) rotate(-360deg); }
+  to { transform: rotate(0deg) translateX(6px) rotate(0deg); }
+}
+.float{
+  animation-name: floating;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.float-delay{
+  animation-name: floating;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+}
+.float-delay-2{
+  animation-name: floating;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+}
+.float-delay-3{
+  animation-name: floating;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.5s;
+}
+.orbit{
+  animation: circularOrbit 6s linear infinite;
+}
+.orbit-delay{
+  animation: circularOrbit 5s linear infinite;
+}
+.orbit-delay-2{
+  animation: circularOrbit 4s linear infinite;
+}
+.orbit-backwards{
+  animation: circularOrbitBackwards 4s linear infinite;
+}
+.orbit-backwards-delay{
+  animation: circularOrbitBackwards 4s linear infinite;
+  //animation-delay: 2s;
+}
+
+/*
+* Animaciones Vuejs
+*/
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 1s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

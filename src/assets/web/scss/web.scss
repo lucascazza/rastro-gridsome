@@ -1,0 +1,160 @@
+@import './colors.scss';
+@import './animations.scss';
+@import './fonts.scss';
+
+.resize-observer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: block;
+  overflow: hidden;
+}
+// Common layout
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'SprintSansRegular';
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  color: var(--black);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+  overflow-x: hidden;
+}
+
+.web {
+
+  p,
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    color: #fff;
+  }
+}
+
+.web__title {
+  color: #fff;
+  font-size: 2.3rem;
+  font-family: 'OswaldHeavy';
+}
+
+.web__subtitle {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'SprintSansBold';
+}
+
+.web__text {
+  color: var(--light-grey);
+}
+
+@media (min-width: 768px) {
+  .web__title {
+    font-size: 3rem     
+  }
+
+  .web__subtitle {
+    font-size: 1.5rem;
+  }
+
+  .web__text {
+    font-size: 1.1rem;      
+  }
+}
+
+@media (min-width: 992px) {
+  .web__title {
+    font-size: 4rem     
+  }
+
+  .web__subtitle {
+    font-size: 2rem;
+  }
+
+  .web__text {
+    font-size: 1.2rem;     
+  }
+}
+
+@media (min-width: 1200px) {
+  .web__title {
+    font-size: 6rem     
+  }
+
+  .web__subtitle {
+    font-size: 2.15rem;
+  }
+
+  .web__text {
+    font-size: 1.25rem;      
+  }
+}
+
+.web__button{
+  color: var(--cyan);
+  border: 4px solid var(--cyan);
+  padding: .4rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover{
+    color: var(--black);
+    background-color: var(--cyan);
+  }
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text {
+  &--white {
+    color: #fff;
+  }
+
+  &--gray {
+    color: var(--light-grey);
+  }
+
+  &--yellow {
+    color: var(--yellow);
+  }
+
+  &--green {
+    color: var(--green);
+  }
+
+  &--cyan {
+    color: var(--cyan);
+  }
+
+  &--magenta {
+    color: var(--magenta);
+  }
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  width: auto;
+}
