@@ -147,13 +147,15 @@
     &--img {
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       margin-bottom: 2rem;
 
-      img {
-        max-height: 500px;
+      img,
+      video {
+        max-height: 650px;
         max-width: 100%;
         width: auto;
+        border-radius: 20px;
       }
     }
 

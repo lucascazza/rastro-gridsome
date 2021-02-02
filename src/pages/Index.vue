@@ -110,7 +110,7 @@
                       </g>
                     </svg>
                     
-                    Diseño grafico</li>
+                    Fotomontajes</li>
                   <li class="options-list__item" :class="{'active' : stepTrabajos == 4}" @click="stepTrabajos = 4">
                     
                     <svg class="svg-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -136,79 +136,89 @@
                       </g>
                     </svg>
                     
-                    Otra categoria</li>
+                    Ilustraciones</li>
                 </ul>
               </div>
             </div>
             <div class="home-paso__content--img">
-              <g-image src="~/assets/web/img/home/trabajos/prueba.jpg" alt="Trabajo 3d" />
+              <!-- <g-image v-if="stepTrabajos == 1" src="~/assets/web/img/home/trabajos/prueba.jpg" alt="Trabajo 3d" /> -->
+              <video v-show="stepTrabajos == 1" autoplay muted loop>
+                <source v-if="stepTrabajos == 1" src="media/3d-home.mp4" type="video/mp4">
+              </video>
+              <video v-show="stepTrabajos == 2" autoplay muted loop>
+                <source v-if="stepTrabajos == 2" src="media/vfx-home.mp4" type="video/mp4">
+              </video>
+              <video v-show="stepTrabajos == 3" autoplay muted loop>
+                <source v-if="stepTrabajos == 3" src="media/fotomontaje-home.mp4" type="video/mp4">
+              </video>
+              <g-image v-if="stepTrabajos == 4" src="~/assets/web/img/home/trabajos/prueba.jpg" alt="Trabajo 3d" />
             </div>
             <div v-if="isMobile" class="home-paso__content--options-mobile">
               <div class="item-col">
                 <div class="item-col__item active">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
-                  style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                  <g>
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                    style="enable-background:new 0 0 50 50;" xml:space="preserve">
                     <g>
-                      <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
+                      <g>
+                        <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
 			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
 			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
+                      </g>
                     </g>
-                  </g>
-                </svg>
-                <p>3D</p>
+                  </svg>
+                  <p>3D</p>
                 </div>
               </div>
 
               <div class="item-col">
                 <div class="item-col__item">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
-                  style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                  <g>
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                    style="enable-background:new 0 0 50 50;" xml:space="preserve">
                     <g>
-                      <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
+                      <g>
+                        <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
 			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
 			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
+                      </g>
                     </g>
-                  </g>
-                </svg>
-                <p>VFX</p>
+                  </svg>
+                  <p>VFX</p>
                 </div>
               </div>
 
               <div class="item-col">
                 <div class="item-col__item">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
-                  style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                  <g>
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                    style="enable-background:new 0 0 50 50;" xml:space="preserve">
                     <g>
-                      <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
+                      <g>
+                        <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
 			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
 			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
+                      </g>
                     </g>
-                  </g>
-                </svg>
-                <p>Gráfico</p>
+                  </svg>
+                  <p>Gráfico</p>
                 </div>
               </div>
 
               <div class="item-col">
                 <div class="item-col__item">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
-                  style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                  <g>
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                    style="enable-background:new 0 0 50 50;" xml:space="preserve">
                     <g>
-                      <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
+                      <g>
+                        <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
 			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
 			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
+                      </g>
                     </g>
-                  </g>
-                </svg>
-                <p>Web</p>
+                  </svg>
+                  <p>Web</p>
                 </div>
               </div>
             </div>
@@ -326,7 +336,6 @@
           </div>
         </div>
         <ScrollTopButton></ScrollTopButton>
-        <MainFooter></MainFooter>
       </Scrollama>
     </ClientOnly>
   </Layout>

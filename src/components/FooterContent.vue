@@ -1,8 +1,8 @@
 <template>
   <Container tag="section" class="content-footer">
     <div class="content-footer__content">
-      <h2 class="web__subtitle">Conoce nuestros trabajos</h2>
-      <g-link class="web__button" to="/portfolio">Portfolio</g-link>
+      <h2 class="web__subtitle">¿Perdiste algo? <br/> Tenemos lo que estas necesitando</h2>
+      <g-link class="web__button" to="/portfolio">Experiencia Rastro</g-link>
     </div>
   </Container>
 </template>
@@ -29,7 +29,7 @@ export default {
     align-items: center;
 
     .web__subtitle {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       font-size: 1.5rem;
       text-transform: uppercase;
       text-align: center;
@@ -58,7 +58,7 @@ export default {
 
   @media (min-width: 1200px) {
     min-height: 80vh;
-    margin-bottom: 30vh;
+    margin-bottom: 40vh;
   }
 }
 </style>
