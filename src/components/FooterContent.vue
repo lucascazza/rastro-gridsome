@@ -21,7 +21,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
 
   &__content {
     display: flex;
@@ -37,17 +37,22 @@ export default {
 
     .web__button {
       font-family: sprintSansMedium;
+
+      @media (max-width: 768px){
+        max-width: 250px;
+        font-size: 1rem;
+      }
     }
   }
 
 
   @media (min-width: 768px) {
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
   }
 
   @media (min-width: 992px) {
     min-height: 60vh;
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
 
     &__content {
       .web__subtitle {
@@ -58,7 +63,7 @@ export default {
 
   @media (min-width: 1200px) {
     min-height: 80vh;
-    margin-bottom: 40vh;
+    margin-bottom: 30vh;
   }
 }
 </style>

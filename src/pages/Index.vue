@@ -92,14 +92,14 @@
               <div class="item-col">
                 <div class="item-col__item" :class="{'active' : stepTrabajos == 3}" @click="stepTrabajos = 3">
                   <i class="icon-3d"></i>
-                  <p>Gráfico</p>
+                  <p>Montajes</p>
                 </div>
               </div>
 
               <div class="item-col">
                 <div class="item-col__item" :class="{'active' : stepTrabajos == 4}" @click="stepTrabajos = 4">
                   <i class="icon-3d"></i>
-                  <p>Web</p>
+                  <p>Ilust</p>
                 </div>
               </div>
             </div>

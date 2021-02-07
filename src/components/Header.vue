@@ -73,7 +73,7 @@ export default {
       position: fixed;
       top: -70px;
       height: 50px;
-      z-index: 4;
+      z-index: 7;
       background-color: rgba(35, 35, 35, .9);
       transition: height .0s, background-color .3s;
       transition: .2s ease-in;
