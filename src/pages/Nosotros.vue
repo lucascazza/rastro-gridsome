@@ -37,7 +37,7 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
             <div class="about__row-text">
               <h2 class="web__subtitle">Lucas Scazzariello</h2>
               <p class="web__text strong">Web Desing & Developer.</p>
-              <p class="web__text">El encargado de dejar la huella de <span>RASTRO</span> en cada web/app en la que nos toque diseñar.</p>
+              <p class="web__text">El encargado de dejar la huella de <span>RASTRO</span> en cada web/app en la que nos toque trabajar.</p>
             </div>
           </div>
           <div class="about__feature about__feature--2">
@@ -77,22 +77,28 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
         </div>
       </div>
     </Container>
+    <Container tag="section" fullScreen class="about-grid">
+      <g-image src="~/assets/web/img/about/logo-grilla.svg" alt="Grilla" />
+    </Container>
     <Container tag="section" fullScreen class="about-footer-content">
       <FooterContent></FooterContent>
     </Container>
+    <ScrollTopButton></ScrollTopButton>
   </Layout>
 </template>
 
 <script>
 import Container from '~/components/Container.vue'
 import FooterContent from '~/components/FooterContent'
+import ScrollTopButton from '~/components/ScrollTopButton'
 export default {
   components:{
     Container,
-    FooterContent
+    FooterContent,
+    ScrollTopButton
   },
   metaInfo: {
-    title: 'About us'
+    title: 'Sobre nosotros'
   }
 }
 </script>

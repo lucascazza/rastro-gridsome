@@ -6,6 +6,7 @@ import Vuex from 'vuex'
 require('typeface-open-sans')
 require('typeface-roboto')
 require('typeface-montserrat')
+import '../static/icons/rastroicons.css'
 
 export default function (Vue, { router, head, isClient }) {
   Vue.use(Vuex)

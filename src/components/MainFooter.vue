@@ -3,32 +3,20 @@
         <g-image class="img-responsive main-footer__logo" src="~/assets/web/img/footer/footer-background-verde.svg" alt="Footer logo" />
         <Container tag="div" class="main-footer__content">
           <p>Copyright © 2021 Rastro</p>
+          <g-image v-if="isMobile" class="img-responsive" src="~/assets/web/img/logo-only.svg" alt="Logo" />          
+          <g-image v-else class="img-responsive" src="~/assets/web/img/isologo.svg" alt="Logo" />          
           <div class="main-footer__content--redes">
             <a href="">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
-                    style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                    <g>
-                      <g>
-                        <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
-			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
-			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
-                      </g>
-                    </g>
-                  </svg>
+              <i class="icon-instagram"></i>
             </a>
             <a href="">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
-                    style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                    <g>
-                      <g>
-                        <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
-			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
-			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
-                      </g>
-                    </g>
-                  </svg>
+              <i class="icon-youtube"></i>
+            </a>
+            <a href="">
+              <i class="icon-behance"></i>
+            </a>
+            <a href="">
+              <i class="icon-google"></i>
             </a>
           </div>
         </Container> 
@@ -37,9 +25,37 @@
 <script>
 import Container from "~/components/Container"
 export default {
-    components: {
-        Container
+  components: {
+    Container
+  },
+  beforeMount() {
+    if (process.isClient) {
+      window.addEventListener('resize', this.handleResize)
+      this.handleResize()
     }
+  },
+  beforeDestroy() {
+    if (process.isClient) {
+      window.removeEventListener('resize', this.handleResize)
+    }
+  },
+  computed: {
+    isMobile() {
+      return this.windowWidth < 992
+    }
+  },
+  data() {
+    return {
+      windowWidth: 0
+    }
+  },
+  methods: {
+    handleResize() {
+      if (process.isClient) {
+        this.windowWidth = window.innerWidth;
+      }
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -47,36 +63,65 @@ export default {
     background: #314430;
     position: relative;
     padding: 0;
-    
-    &__logo{
+
+    &__logo {
       position: absolute;
       bottom: 24vh;
     }
 
-    &__content{
-      padding: 0 1rem;
+    &__content {
+      padding: 1.5rem 1rem .5rem 1rem;
       min-height: 25vh;
       display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
       align-items: center;
-      justify-content: space-between;
 
-      p{
+      @media (min-width: 992px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      p {
         font-size: 1rem;
       }
 
-      &--redes{
+      .img-responsive{
+        max-width: 80px;
+        padding: .5rem;
+
+        @media (min-width: 768px){
+          max-width: 100px;
+        }
+
+        @media (min-width: 992px){
+          max-width: 110px;
+        }
+
+        @media (min-width: 1200px){
+          max-width: 120px;
+        }
+      }
+
+      &--redes {
         display: flex;
         align-items: center;
-        a{
-          width: 45px;
+
+        a {
+          text-decoration: none;
           margin-right: 1rem;
 
-          &:last-child{
+          &:last-child {
             margin: 0;
           }
-          
-          svg{
-            fill: #fff;
+
+          i {
+            color: #fff;
+            font-size: 36px;
+
+            @media (min-width: 768px){
+              font-size: 40px;
+            }
           }
         }
       }
