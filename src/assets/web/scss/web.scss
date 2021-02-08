@@ -68,12 +68,22 @@ p {
   font-family: 'SprintSansRegular';
   color: var(--light-grey);
   font-size: .85rem;
+
+  &.strong{
+    font-size: .95rem;
+    font-weight: 700;
+    color: #fff
+  }
 }
 
 @media (min-width: 400px){
   .web__text,
   p{
     font-size: 1rem;
+
+    &.strong{
+      font-size: 1.05rem;
+    }
   }
 }
 
@@ -87,7 +97,11 @@ p {
   }
 
   .web__text {
-    font-size: 1.2rem;      
+    font-size: 1.2rem;
+
+    &.strong{
+      font-size: 1.3rem;
+    }
   }
 }
 
@@ -101,7 +115,11 @@ p {
   }
 
   .web__text {
-    font-size: 1.25rem;     
+    font-size: 1.25rem;
+
+    &.strong{
+      font-size: 1.35rem;
+    } 
   }
 }
 
@@ -115,7 +133,11 @@ p {
   }
 
   .web__text {
-    font-size: 1.3rem;      
+    font-size: 1.3rem;
+
+    &.strong{
+      font-size: 1.4rem;
+    } 
   }
 }
 

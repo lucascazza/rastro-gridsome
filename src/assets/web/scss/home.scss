@@ -103,7 +103,7 @@
 }
 
 .home-paso {
-  background-image: url(../assets/web/img/home/home-paso.svg);
+  background-image: url(../assets/web/img/home/home-paso-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -150,10 +150,16 @@
       justify-content: center;
       margin-bottom: 2rem;
 
-      img {
-        max-height: 500px;
+      img,
+      video {
+        max-height: 650px;
         max-width: 100%;
         width: auto;
+        border-radius: 20px;
+      }
+
+      @media (min-width: 992px){
+        justify-content: flex-end;
       }
     }
 
@@ -167,16 +173,16 @@
           font-family: SprintSansMedium;
           font-size: 1.65rem;
           color: #ffffff;
-          margin-bottom: 1rem;
+          margin-bottom: 1.2rem;
           display: flex;
           align-items: center;
           cursor: pointer;
           position: relative;
 
-          svg {
-            width: 54px;
-            margin-right: .75rem;
-            fill: #ffffff;
+          i {
+            font-size: 54px;
+            margin-right: 1.15rem;
+            color: #ffffff;
           }
 
           .svg-2 {
@@ -187,20 +193,24 @@
             color: var(--cyan);
             transition: .1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
+            i {
+              font-size: 54px;
+              margin-right: 1.15rem;
+              color: #ffffff;
+            }
+
             .svg-1 {
-              position: absolute;
-              left: 0;
               z-index: 2;
-              fill-opacity: .85;
-              fill: var(--cyan);
+              color: var(--cyan);
               animation: slideBlurRight .15s forwards;
             }
 
             .svg-2 {
+              position: absolute;
+              z-index: 1;
+              left: 3px;
               display: block;
-              margin-left: 4px;
-              margin-right: 8px;
-              fill: #ff445a;
+              color: #ff445a;
               filter: blur(1px);
               animation: slideBlurLeft .15s forwards;
             }
@@ -232,9 +242,9 @@
           height: 90px;
           justify-content: space-between;
 
-          svg {
-            max-width: 80%;
-            fill: #fff;
+          i {
+            font-size: 38px;
+            color: #fff;
           }
 
           p {
@@ -245,8 +255,8 @@
             border-color: var(--cyan);
             background-color: rgba(94, 253, 204, .2);
 
-            svg {
-              fill: var(--cyan)
+            i {
+              color: var(--cyan)
             }
 
             p {
@@ -256,6 +266,8 @@
         }
       }
     }
+
+
 
     @media (min-width: 992px) {
       flex-direction: row;
@@ -277,6 +289,14 @@
         margin-bottom: 0rem;
       }
     }
+  }
+
+  @media (min-width: 520px) {
+    background-image: url(../assets/web/img/home/home-paso-mobileL.svg);
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url(../assets/web/img/home/home-paso.svg);
   }
 }
 
@@ -308,6 +328,33 @@
 
     .img-laptop {
       position: absolute;
+      z-index: 6;
+    }
+
+    .img-fondo {
+      position: absolute;
+      z-index: 5;
+    }
+
+    .img-background {
+      max-width: 120%;
+      min-height: 29vh;
+
+      @media (min-width: 768px) {
+        min-height: 40vh;
+      }
+
+      @media (min-width: 992px) {
+        min-height: 51vh;
+      }
+
+      @media (min-width: 1200px) {
+        min-height: 62vh;
+      }
+
+      @media (min-width: 1600px) {
+        min-height: 80vh;
+      }
     }
   }
 
@@ -422,7 +469,7 @@
           }
         }
 
-        @media (min-width: 1200px){
+        @media (min-width: 1200px) {
           margin-left: 0;
           margin-right: 0;
         }
@@ -464,6 +511,34 @@
 
       &:last-child {
         margin-bottom: 0;
+      }
+
+      &.active {
+        transform: scale(1.4);
+        background: var(--cyan);
+      }
+    }
+  }
+}
+
+.stepsImages {
+  display: flex;
+  justify-content: center;
+
+  &__steps {
+    display: flex;
+
+    &--point {
+      width: 9px;
+      height: 9px;
+      background: rgba(16, 254, 204, .2);
+      border-radius: 50px;
+      transition: .15s ease-in-out;
+      cursor: pointer;
+      margin-right: 1em;
+
+      &:last-child {
+        margin-right: 0;
       }
 
       &.active {

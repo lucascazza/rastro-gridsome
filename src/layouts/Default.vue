@@ -1,15 +1,18 @@
 <template>
   <main class="web__content">
     <Header />
-    <slot />    
+    <slot />
+    <MainFooter></MainFooter>
   </main>
 </template>
 <script>
 import '~/assets/web/scss/web.scss'
 import Header from '~/components/Header.vue'
+import MainFooter from '~/components/MainFooter.vue'
 export default {
   components: {
-    Header
+    Header,
+    MainFooter
   },
   beforeMount: function() {
     document.body.className = 'web';
