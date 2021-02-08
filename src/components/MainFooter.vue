@@ -3,8 +3,7 @@
         <g-image class="img-responsive main-footer__logo" src="~/assets/web/img/footer/footer-background-verde.svg" alt="Footer logo" />
         <Container tag="div" class="main-footer__content">
           <p>Copyright © 2021 Rastro</p>
-          <g-image v-if="isMobile" class="img-responsive" src="~/assets/web/img/logo-only.svg" alt="Logo" />          
-          <g-image v-else class="img-responsive" src="~/assets/web/img/isologo.svg" alt="Logo" />          
+          <g-image class="img-responsive" src="~/assets/web/img/logo-only.svg" alt="Logo" />                
           <div class="main-footer__content--redes">
             <a href="">
               <i class="icon-instagram"></i>
@@ -16,7 +15,7 @@
               <i class="icon-behance"></i>
             </a>
             <a href="">
-              <i class="icon-google"></i>
+              <i class="icon-email"></i>
             </a>
           </div>
         </Container> 

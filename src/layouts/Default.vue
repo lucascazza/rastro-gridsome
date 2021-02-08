@@ -1,12 +1,11 @@
 <template>
-  <main class="web__content">
+  <main class="web__content" data-app>
     <Header />
     <slot />
     <MainFooter></MainFooter>
   </main>
 </template>
 <script>
-import '~/assets/web/scss/web.scss'
 import Header from '~/components/Header.vue'
 import MainFooter from '~/components/MainFooter.vue'
 export default {

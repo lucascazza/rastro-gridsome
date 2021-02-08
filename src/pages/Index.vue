@@ -114,9 +114,9 @@
           </div>
           <div class="home-adaptar__img">
             <g-image class="img-laptop" src="~/assets/web/img/home/adaptar/laptop-celu.svg" alt="Laptop" />
-            <g-image v-show="stepImage == 1" class="img-fondo" src="~/assets/web/img/home/adaptar/agrodreams.png" alt="Agrodreams" />
-            <g-image v-show="stepImage == 2" class="img-fondo" src="~/assets/web/img/home/adaptar/subastas.png" alt="Subastas Banco Ciudad" />
-            <g-image v-show="stepImage == 3" class="img-fondo" src="~/assets/web/img/home/adaptar/aqualine.png" alt="Aqualine" />
+            <g-image v-if="stepImage == 1" class="img-fondo" src="~/assets/web/img/home/adaptar/agrodreams.png" alt="Agrodreams" />
+            <g-image v-if="stepImage == 2" class="img-fondo" src="~/assets/web/img/home/adaptar/subastas.png" alt="Subastas Banco Ciudad" />
+            <g-image v-if="stepImage == 3" class="img-fondo" src="~/assets/web/img/home/adaptar/aqualine.png" alt="Aqualine" />
             <g-image class="img-background" src="~/assets/web/img/home/fondo-adaptar.svg" alt="Fondo adaptar" />
           </div>
           <div class="stepsImages" v-if="!isMobile">
@@ -286,7 +286,7 @@ export default {
       } else {
         this.stepImage += 1
       }
-    }, 3000);
+    }, 5000);
   },
   methods: {
     stepEnterHandler ({element, index, direction}) {
