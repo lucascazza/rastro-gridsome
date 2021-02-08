@@ -9,7 +9,6 @@ require('typeface-open-sans')
 require('typeface-roboto')
 require('typeface-montserrat')
 import '../static/icons/rastroicons.css'
-import '~/assets/web/scss/web.scss'
 
 export default function (Vue, { appOptions, head }) {
   Vue.use(Vuex)
