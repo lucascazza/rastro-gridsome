@@ -36,10 +36,9 @@
     </Container>
     <ScrollTopButton></ScrollTopButton>
     <dialog-image
-      :active.sync="dialogImageOn" 
-      :title="'Titulo'"
-      :content="'algo de informacion?'" 
-      :confirm-text="'aceptar'"
+      v-dragscroll
+      :active.sync="dialogImageOn"
+      :work="workSelected"
       @confirm="back()" />
   </Layout>
 </template>
@@ -61,6 +60,7 @@ export default {
   },
   data() {
     return {
+      workSelected: {},
       dialogImageOn: false,
       tabs: [
         {
@@ -109,7 +109,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/lollapalooza-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/lollapalooza-t.jpg',
-              full: '../img/portfolio/grafico/lollapalooza.jpg',
+              imgFull: '../img/portfolio/grafico/lollapalooza.jpg',
               title: 'Timeline Lollapalooza',
               description: 'Timeline Lollapalooza'
             },
@@ -118,7 +118,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/callia-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/callia-t.jpg',
-              full: '../img/portfolio/grafico/callia.jpg',
+              imgFull: '../img/portfolio/grafico/callia.jpg',
               title: 'Callia',
               description: 'Callia description'
             },
@@ -127,7 +127,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/logofolio-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/logofolio-t.jpg',
-              full: '../img/portfolio/grafico/logofolio.png',
+              imgFull: '../img/portfolio/grafico/logofolio.png',
               title: 'Logofolio',
               description: 'Logofolio description'
             },
@@ -136,7 +136,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/pauline-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/pauline-t.jpg',
-              full: '../img/portfolio/grafico/pauline.png',
+              imgFull: '../img/portfolio/grafico/pauline.png',
               title: 'Pauline',
               description: 'Pauline description'
             },
@@ -145,7 +145,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/temporada-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/temporada-t.jpg',
-              full: '../img/portfolio/grafico/temporadajuegos.jpg',
+              imgFull: '../img/portfolio/grafico/temporadajuegos.jpg',
               title: 'Temporada de juegos',
               description: 'Temporada de juegos description'
             }
@@ -159,7 +159,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/lollapalooza-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/lollapalooza-t.jpg',
-              full: '../img/portfolio/grafico/lollapalooza.jpg',
+              imgFull: '../img/portfolio/grafico/lollapalooza.jpg',
               title: 'Timeline Lollapalooza',
               description: 'Timeline Lollapalooza'
             },
@@ -168,7 +168,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/callia-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/callia-t.jpg',
-              full: '../img/portfolio/grafico/callia.jpg',
+              imgFull: '../img/portfolio/grafico/callia.jpg',
               title: 'Callia',
               description: 'Callia description'
             },
@@ -177,7 +177,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/logofolio-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/logofolio-t.jpg',
-              full: '../img/portfolio/grafico/logofolio.png',
+              imgFull: '../img/portfolio/grafico/logofolio.png',
               title: 'Logofolio',
               description: 'Logofolio description'
             },
@@ -186,7 +186,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/pauline-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/pauline-t.jpg',
-              full: '../img/portfolio/grafico/pauline.png',
+              imgFull: '../img/portfolio/grafico/pauline.png',
               title: 'Pauline',
               description: 'Pauline description'
             },
@@ -195,7 +195,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/temporada-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/temporada-t.jpg',
-              full: '../img/portfolio/grafico/temporadajuegos.jpg',
+              imgFull: '../img/portfolio/grafico/temporadajuegos.jpg',
               title: 'Temporada de juegos',
               description: 'Temporada de juegos description'
             }
@@ -209,7 +209,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/lollapalooza-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/lollapalooza-t.jpg',
-              full: '../img/portfolio/grafico/lollapalooza.jpg',
+              imgFull: '../img/portfolio/grafico/lollapalooza.jpg',
               title: 'Timeline Lollapalooza',
               description: 'Timeline Lollapalooza'
             },
@@ -218,7 +218,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/callia-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/callia-t.jpg',
-              full: '../img/portfolio/grafico/callia.jpg',
+              imgFull: '../img/portfolio/grafico/callia.jpg',
               title: 'Callia',
               description: 'Callia description'
             },
@@ -227,7 +227,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/logofolio-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/logofolio-t.jpg',
-              full: '../img/portfolio/grafico/logofolio.png',
+              imgFull: '../img/portfolio/grafico/logofolio.png',
               title: 'Logofolio',
               description: 'Logofolio description'
             },
@@ -236,7 +236,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/pauline-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/pauline-t.jpg',
-              full: '../img/portfolio/grafico/pauline.png',
+              imgFull: '../img/portfolio/grafico/pauline.png',
               title: 'Pauline',
               description: 'Pauline description'
             },
@@ -245,7 +245,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/temporada-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/temporada-t.jpg',
-              full: '../img/portfolio/grafico/temporadajuegos.jpg',
+              imgFull: '../img/portfolio/grafico/temporadajuegos.jpg',
               title: 'Temporada de juegos',
               description: 'Temporada de juegos description'
             }
@@ -274,7 +274,7 @@ export default {
   },
   methods: {
     openWork(work){
-      console.log(work)
+      this.workSelected = work
       this.dialogImageOn = true
     }
   }
@@ -283,4 +283,11 @@ export default {
 
 <style lang="scss">
   @import '~/assets/web/scss/portfolio';
+
+  .prueba-drag{
+    max-width: 300px;
+    max-height: 400px;
+    background: #fff;
+    overflow-y: scroll;
+  }
 </style>

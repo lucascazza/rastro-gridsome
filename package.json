@@ -7,6 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "dragscroll": "0.0.8",
     "gridsome": "^0.7.0",
     "gridsome-plugin-sass-resources-loader": "0.0.3",
     "intersection-observer": "^0.11.0",
