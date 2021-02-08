@@ -9,7 +9,7 @@ require('typeface-roboto')
 require('typeface-montserrat')
 import '../static/icons/rastroicons.css'
 
-export default function (Vue, { router, head, isClient }) {
+export default function (Vue, { router, head, isClient }) { 
   Vue.use(Vuex)
   Vue.use(vuetify)
   // Set default layout as a global component
