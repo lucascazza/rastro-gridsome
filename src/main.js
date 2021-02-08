@@ -10,6 +10,8 @@ import '../static/icons/rastroicons.css'
 
 export default function (Vue, { router, head, isClient }) { 
   Vue.use(Vuex)
+  Vue.config.productionTip = false
+
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 }

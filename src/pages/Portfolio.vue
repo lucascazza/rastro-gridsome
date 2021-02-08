@@ -21,6 +21,9 @@ export default {
   },
   metaInfo: {
     title: 'Nuestro trabajo'
+  },
+  mounted(){
+    console.log(this)
   }
 }
 </script>
