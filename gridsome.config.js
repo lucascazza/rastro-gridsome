@@ -14,12 +14,11 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'Rastro',
-  siteUrl: 'https://rastro.com',
+  siteUrl: 'https://somosrastro.com',
   plugins: [],
   chainWebpack: config => {
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
     types.forEach(type => addStyleResource(config.module.rule('scss').oneOf(type)))
   }
-
 }
 
