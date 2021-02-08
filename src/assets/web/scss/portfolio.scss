@@ -1,3 +1,62 @@
+.portfolio-header {
+  padding-top: 50px;
+
+  @media (min-width: 768px) {
+    padding-top: $headerHeight;
+  }
+
+  &__options {
+
+    .v-tab{
+      font-size: .75rem !important;
+
+      @media (min-width: 992px){
+        font-size: .85rem !important;
+      }
+    }
+
+    .v-tabs.color-arrows {
+
+      .v-icon,
+      .v-icon.v-icon--disabled {
+        color: var(--yellow) !important;
+      }
+
+      .v-icon.v-icon--disabled{
+        opacity: .25;
+      }
+
+    }
+
+    .v-tabs-bar {
+      margin-bottom: 1rem;
+    }
+
+    .v-tabs-items {
+      background-color: transparent !important;
+    }
+
+    .v-tabs-bar__content {
+      justify-content: center;
+
+      &::after{
+        content: '';
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: var(--yellow);
+        opacity: .25;
+    }
+    }
+
+    .v-tabs-bar .v-tab:not(.v-tab--active) {
+      color: #fff !important;
+    }
+  }
+}
+
 .portfolio-footer-content {
   background-image: url(../assets/web/img/home/fondo-home-footer.svg);
   background-repeat: no-repeat;
