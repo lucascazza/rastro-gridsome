@@ -36,7 +36,6 @@
     </Container>
     <ScrollTopButton></ScrollTopButton>
     <dialog-image
-      v-dragscroll
       :active.sync="dialogImageOn"
       :work="workSelected"
       @confirm="back()" />

@@ -48,6 +48,21 @@ export default {
 <style lang="scss">
     .dialog-image{
         display: inline-grid;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;      
+
+        &::-webkit-scrollbar {
+            width: .2em;
+        }
+    
+        &::-webkit-scrollbar-track {
+            box-shadow: transparent;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            border-radius: 6px;
+        }
 
         &__content{
             display: inline-grid;
