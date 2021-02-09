@@ -1,17 +1,5 @@
 <template>
     <v-dialog eager content-class="dialog-image dragscroll" overlay-opacity=".7" v-model="showDialog" max-width="1000">
-        <!-- <v-card>
-            <v-card-title class="title" primary-title>{{title}}</v-card-title>
-            <v-card-text>
-                <p v-if="content" v-html="content" class="text-content"></p>
-                <slot></slot>
-            </v-card-text>
-            
-            <v-card-actions>
-                <v-spacer></v-spacer>
-                <v-btn color="primary" text @click="confirmClick">{{confirmText}}</v-btn>
-            </v-card-actions>
-        </v-card> -->
         <div class="dialog-image__content">
             <img class="img-responsive" :src="work.imgFull" />
         </div>
@@ -63,12 +51,7 @@ export default {
             "complete" == o.readyState ? s() : n[c]("load", s, 0), e.reset = s
         });
     },
-    methods: {
-        confirmClick() {
-            this.showDialog = false;
-            this.$emit('confirm');
-        }
-    }
+    methods: {}
 }
 </script>
 
@@ -95,5 +78,20 @@ export default {
             display: inline-grid;
             max-width: 1000px;
         }
+    }
+
+    .dragscroll {
+        cursor: -webkit-grab;
+        cursor: -moz-grab;
+        cursor: -o-grab;
+        cursor: grab;
+    }
+
+
+    .dragscroll:active {
+        cursor: -webkit-grabbing;
+        cursor: -moz-grabbing;
+        cursor: -o-grabbing;
+        cursor: grabbing;
     }
 </style>

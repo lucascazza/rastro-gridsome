@@ -37,9 +37,11 @@
     <ScrollTopButton></ScrollTopButton>
     <MainFooter />
     <dialog-image
-      :active.sync="dialogImageOn"
-      :work="workSelected"
-      @confirm="back()" />
+      :active.sync="showDialogImage"
+      :work="workSelected"/>
+    <dialog-video
+      :active.sync="showDialogVideo"
+      :work="workSelected"/>
   </Layout>
 </template>
 
@@ -49,13 +51,15 @@ import FooterContent from '~/components/FooterContent';
 import ScrollTopButton from '~/components/ScrollTopButton';
 import MainFooter from '~/components/MainFooter';
 import DialogImage from '~/components/Dialogs/DialogImage';
+import DialogVideo from '~/components/Dialogs/DialogVideo';
 export default {
   components:{
     Container,
     FooterContent,
     ScrollTopButton,
     MainFooter,
-    'dialog-image': DialogImage
+    'dialog-image': DialogImage,
+    'dialog-video': DialogVideo
   },
   metaInfo: {
     title: 'Nuestro trabajo'
@@ -63,7 +67,9 @@ export default {
   data() {
     return {
       workSelected: {},
-      dialogImageOn: false,
+      showDialogImage: false,
+      showDialogVideo: false,
+      showDialogLink: false,
       tabs: [
         {
           name: '3d',
@@ -108,10 +114,10 @@ export default {
           trabajos: [
             {
               name: 'lollapalooza',
-              type: 'image',
+              type: 'video',
               lazyImg: '../img/portfolio/grafico/lazy/lollapalooza-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/lollapalooza-t.jpg',
-              imgFull: '../img/portfolio/grafico/lollapalooza.jpg',
+              link: 'https://www.youtube.com/embed/UeN0Peiz9w4',
               title: 'Timeline Lollapalooza',
               description: 'Timeline Lollapalooza'
             },
@@ -275,9 +281,15 @@ export default {
     };
   },
   methods: {
-    openWork(work){
+    openWork(work) {
       this.workSelected = work
-      this.dialogImageOn = true
+      if (work.type == 'image') {
+        this.showDialogImage = true
+      } else if (work.type == 'video') {
+        this.showDialogVideo = true
+      } else if (work.type == 'link') {
+        this.showDialogLink = true
+      }
     }
   }
 }

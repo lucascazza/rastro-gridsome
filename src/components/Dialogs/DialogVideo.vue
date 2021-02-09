@@ -1,17 +1,8 @@
 <template>
-    <v-dialog overlay-opacity=".7" v-model="showDialog">
-        <v-card>
-            <v-card-title class="title" primary-title>{{title}}</v-card-title>
-            <v-card-text>
-                <p v-if="content" v-html="content" class="text-content"></p>
-                <slot></slot>
-            </v-card-text>
-            
-            <v-card-actions>
-                <v-spacer></v-spacer>
-                <v-btn color="primary" text @click="confirmClick">{{confirmText}}</v-btn>
-            </v-card-actions>
-        </v-card>
+    <v-dialog eager content-class="dialog-video" overlay-opacity=".7" v-model="showDialog" max-width="1000">
+        <iframe class="dialog-video__iframe" width="1000" height="560" :src="work.link" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </v-dialog>
 </template>
 
@@ -20,10 +11,7 @@
         name: 'DialogVideo',
         props: [
             'active',
-            'title',
-            'content',
-            'confirmText',
-            'trabajo'
+            'work'
         ],
         computed: {
             showDialog: {
@@ -35,23 +23,16 @@
                 }
             }
         },
-        methods: {
-            confirmClick() {
-                this.showDialog = false;
-                this.$emit('confirm');
-            }
-        }
+        methods: {}
 	}
 </script>
 
 <style lang="scss">
-    .text-content{
-        span{
-            font-weight: 700;
-            color: #0A2E36;
-        }
+.dialog-video{
+    display: inline-grid;
+    
+    &__iframe{
+
     }
-    .title{
-        color: #0A2E36
-    }
+}
 </style>
