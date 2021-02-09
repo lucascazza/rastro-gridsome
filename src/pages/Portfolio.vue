@@ -282,11 +282,4 @@ export default {
 
 <style lang="scss">
   @import '~/assets/web/scss/portfolio';
-
-  .prueba-drag{
-    max-width: 300px;
-    max-height: 400px;
-    background: #fff;
-    overflow-y: scroll;
-  }
 </style>

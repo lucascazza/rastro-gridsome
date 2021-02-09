@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import 'dragscroll/dragscroll'
 export default {
     name: 'DialogImage',
     props: [

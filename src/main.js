@@ -26,6 +26,11 @@ export default function (Vue, { appOptions, head }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
   });
+
+  head.script.push({
+    src: 'js/dragscroll.js',
+    body: true
+  })
   
   const opts = {} //opts includes, vuetify themes, icons, etc.
   appOptions.vuetify = new Vuetify(opts);
