@@ -121,6 +121,8 @@
   &__text-principal {
     max-width: 700px;
     margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
     .web__subtitle {
       margin-bottom: 1rem;
@@ -353,17 +355,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../assets/web/img/about/fondo-grid-mobile.svg);
+  background-image: url('/img/about/fondo-grid-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 
   @media (min-width: 460px) {
-    background-image: url(../assets/web/img/about/fondo-grid-768.svg);
+    background-image: url('/img/about/fondo-grid-768.svg');
   }
 
   @media (min-width: 768px) {
-    // background-image: url(../assets/web/img/about/fondo-grid-768.svg);
+    // background-image: url('/img/about/fondo-grid-768.svg');
     // background-repeat: no-repeat;
     // background-size: contain;
     // background-position: center center;
@@ -371,19 +373,19 @@
   }
 
   @media (min-width: 992px) {
-    background-image: url(../assets/web/img/about/fondo-grid-992.svg);
+    background-image: url('/img/about/fondo-grid-992.svg');
   }
 
   @media (min-width: 1200px) {
-    background-image: url(../assets/web/img/about/fondo-grid-1200.svg);
+    background-image: url('/img/about/fondo-grid-1200.svg');
   }
 
   @media (min-width: 1400px) {
-    background-image: url(../assets/web/img/about/fondo-grid-1400.svg);
+    background-image: url('/img/about/fondo-grid-1400.svg');
   }
 
   @media (min-width: 1600px) {
-    background-image: url(../assets/web/img/about/fondo-grid.svg);
+    background-image: url('/img/about/fondo-grid.svg');
   }
 
   img {
