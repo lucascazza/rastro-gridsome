@@ -29,7 +29,7 @@ export default function (Vue, { appOptions, head }) {
 
   head.script.push({
     src: './js/dragscroll.js',
-    body: true
+    body: false
   })
   
   const opts = {} //opts includes, vuetify themes, icons, etc.

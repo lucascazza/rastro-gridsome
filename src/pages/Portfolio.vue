@@ -35,6 +35,7 @@
       <FooterContent></FooterContent>
     </Container>
     <ScrollTopButton></ScrollTopButton>
+    <MainFooter />
     <dialog-image
       :active.sync="dialogImageOn"
       :work="workSelected"
@@ -43,15 +44,17 @@
 </template>
 
 <script>
-import Container from '~/components/Container.vue'
-import FooterContent from '~/components/FooterContent'
-import ScrollTopButton from '~/components/ScrollTopButton'
+import Container from '~/components/Container.vue';
+import FooterContent from '~/components/FooterContent';
+import ScrollTopButton from '~/components/ScrollTopButton';
+import MainFooter from '~/components/MainFooter';
 import DialogImage from '~/components/Dialogs/DialogImage';
 export default {
   components:{
     Container,
     FooterContent,
     ScrollTopButton,
+    MainFooter,
     'dialog-image': DialogImage
   },
   metaInfo: {

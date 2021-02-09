@@ -1,17 +1,17 @@
 <template>
-  <main class="web__content" data-app>
-    <Header />
+<div data-app>
+  <Header />
+  <main class="web__content">
     <slot />
-    <MainFooter></MainFooter>
   </main>
+</div>
+  
 </template>
 <script>
 import Header from '~/components/Header.vue'
-import MainFooter from '~/components/MainFooter.vue'
 export default {
   components: {
-    Header,
-    MainFooter
+    Header
   },
   beforeMount: function() {
     document.body.className = 'web';

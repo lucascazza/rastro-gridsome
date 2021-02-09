@@ -84,6 +84,7 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
       <FooterContent></FooterContent>
     </Container>
     <ScrollTopButton></ScrollTopButton>
+    <MainFooter />
   </Layout>
 </template>
 
@@ -91,11 +92,13 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
 import Container from '~/components/Container.vue'
 import FooterContent from '~/components/FooterContent'
 import ScrollTopButton from '~/components/ScrollTopButton'
+import MainFooter from '~/components/MainFooter';
 export default {
   components:{
     Container,
     FooterContent,
-    ScrollTopButton
+    ScrollTopButton,
+    MainFooter
   },
   metaInfo: {
     title: 'Sobre nosotros'
