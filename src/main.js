@@ -28,7 +28,7 @@ export default function (Vue, { appOptions, head }) {
   });
 
   head.script.push({
-    src: 'js/dragscroll.js',
+    src: './js/dragscroll.js',
     body: true
   })
   
