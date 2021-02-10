@@ -29,6 +29,7 @@
 
 <style lang="scss">
 .dialog-video{
+    background-color: var(--black);
     display: inline-grid;
     
     &__iframe{

@@ -9,7 +9,8 @@
             <v-container fluid>
               <v-row>
                 <v-col v-for="work in item.trabajos" :key="work.name" cols="12" md="4">
-                  <v-img 
+                  <v-img
+                    class="portfolio-header__options--img"
                     :lazy-src="work.lazyImg" 
                     :src="work.thumbnail" 
                     aspect-ratio="1"
@@ -42,6 +43,9 @@
     <dialog-video
       :active.sync="showDialogVideo"
       :work="workSelected"/>
+    <dialog-link
+      :active.sync="showDialogLink"
+      :work="workSelected"/>
   </Layout>
 </template>
 
@@ -52,6 +56,7 @@ import ScrollTopButton from '~/components/ScrollTopButton';
 import MainFooter from '~/components/MainFooter';
 import DialogImage from '~/components/Dialogs/DialogImage';
 import DialogVideo from '~/components/Dialogs/DialogVideo';
+import DialogLink from '~/components/Dialogs/DialogLink';
 export default {
   components:{
     Container,
@@ -59,7 +64,8 @@ export default {
     ScrollTopButton,
     MainFooter,
     'dialog-image': DialogImage,
-    'dialog-video': DialogVideo
+    'dialog-video': DialogVideo,
+    'dialog-link': DialogLink
   },
   metaInfo: {
     title: 'Nuestro trabajo'
@@ -132,12 +138,13 @@ export default {
             },
             {
               name: 'logofolio',
-              type: 'image',
+              type: 'link',
               lazyImg: '../img/portfolio/grafico/lazy/logofolio-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/logofolio-t.jpg',
               imgFull: '../img/portfolio/grafico/logofolio.png',
-              title: 'Logofolio',
-              description: 'Logofolio description'
+              link: 'https://drive.google.com/file/d/1-V8ie9_s2eUj5NdHIinnAoJY8n_yQBW3/view?usp=sharing',
+              title: 'Juego Duracell',
+              description: 'Un juego de carrera en el que deberás ir agarrando pilas duracell para más energía, esquivando los obstaculos y las pilas comunes'
             },
             {
               name: 'pauline',
@@ -161,53 +168,7 @@ export default {
         },
         {
           name: 'ilustracion',
-          trabajos: [
-            {
-              name: 'lollapalooza',
-              type: 'image',
-              lazyImg: '../img/portfolio/grafico/lazy/lollapalooza-l.jpg',
-              thumbnail: '../img/portfolio/grafico/thumbnails/lollapalooza-t.jpg',
-              imgFull: '../img/portfolio/grafico/lollapalooza.jpg',
-              title: 'Timeline Lollapalooza',
-              description: 'Timeline Lollapalooza'
-            },
-            {
-              name: 'callia',
-              type: 'image',
-              lazyImg: '../img/portfolio/grafico/lazy/callia-l.jpg',
-              thumbnail: '../img/portfolio/grafico/thumbnails/callia-t.jpg',
-              imgFull: '../img/portfolio/grafico/callia.jpg',
-              title: 'Callia',
-              description: 'Callia description'
-            },
-            {
-              name: 'logofolio',
-              type: 'image',
-              lazyImg: '../img/portfolio/grafico/lazy/logofolio-l.jpg',
-              thumbnail: '../img/portfolio/grafico/thumbnails/logofolio-t.jpg',
-              imgFull: '../img/portfolio/grafico/logofolio.png',
-              title: 'Logofolio',
-              description: 'Logofolio description'
-            },
-            {
-              name: 'pauline',
-              type: 'image',
-              lazyImg: '../img/portfolio/grafico/lazy/pauline-l.jpg',
-              thumbnail: '../img/portfolio/grafico/thumbnails/pauline-t.jpg',
-              imgFull: '../img/portfolio/grafico/pauline.png',
-              title: 'Pauline',
-              description: 'Pauline description'
-            },
-            {
-              name: 'temporada',
-              type: 'image',
-              lazyImg: '../img/portfolio/grafico/lazy/temporada-l.jpg',
-              thumbnail: '../img/portfolio/grafico/thumbnails/temporada-t.jpg',
-              imgFull: '../img/portfolio/grafico/temporadajuegos.jpg',
-              title: 'Temporada de juegos',
-              description: 'Temporada de juegos description'
-            }
-          ]          
+          trabajos: []          
         },
         {
           name: 'grafico',

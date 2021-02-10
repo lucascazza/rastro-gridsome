@@ -57,6 +57,7 @@ export default {
 
 <style lang="scss">
     .dialog-image{
+        background-color: var(--black);
         display: inline-grid;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;      
