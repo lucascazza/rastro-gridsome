@@ -158,7 +158,7 @@
         border-radius: 20px;
       }
 
-      @media (min-width: 992px){
+      @media (min-width: 992px) {
         justify-content: flex-end;
       }
     }
@@ -479,13 +479,18 @@
 }
 
 .home-footer-content {
-  background-image: url(../assets/web/img/home/fondo-home-footer.svg);
+  background-image: url(../assets/web/img/fondo-footer-mobile.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: 768px) {
+    background-size: contain;
+    background-image: url(../assets/web/img/fondo-footer.svg);
+  }
 }
 
 .steps-home {

@@ -7,10 +7,10 @@
 
   &__options {
 
-    .v-tab{
+    .v-tab {
       font-size: .75rem !important;
 
-      @media (min-width: 992px){
+      @media (min-width: 992px) {
         font-size: .85rem !important;
       }
     }
@@ -22,11 +22,12 @@
         color: var(--yellow) !important;
       }
 
-      .v-icon.v-icon--disabled{
+      .v-icon.v-icon--disabled {
         opacity: .25;
       }
 
-      .v-slide-group__next, .v-slide-group__prev{
+      .v-slide-group__next,
+      .v-slide-group__prev {
         min-width: 32px !important;
       }
 
@@ -43,7 +44,7 @@
     .v-tabs-bar__content {
       justify-content: center;
 
-      &::after{
+      &::after {
         content: '';
         height: 2px;
         width: 100%;
@@ -52,25 +53,30 @@
         left: 0;
         background-color: var(--yellow);
         opacity: .25;
-    }
+      }
     }
 
     .v-tabs-bar .v-tab:not(.v-tab--active) {
       color: #fff !important;
     }
 
-    &--img{
+    &--img {
       cursor: pointer;
     }
   }
 }
 
 .portfolio-footer-content {
-  background-image: url(../assets/web/img/home/fondo-home-footer.svg);
+  background-image: url(../assets/web/img/fondo-footer-mobile.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: 768px) {
+    background-size: contain;
+    background-image: url(../assets/web/img/fondo-footer.svg);
+  }
 }

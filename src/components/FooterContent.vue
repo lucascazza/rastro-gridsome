@@ -21,7 +21,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 8vh;
+  margin-bottom: 5vh;
 
   &__content {
     display: flex;
@@ -47,12 +47,12 @@ export default {
 
 
   @media (min-width: 768px) {
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
   }
 
   @media (min-width: 992px) {
     min-height: 60vh;
-    margin-bottom: 15vh;
+    margin-bottom: 12vh;
 
     &__content {
       .web__subtitle {
@@ -63,7 +63,7 @@ export default {
 
   @media (min-width: 1200px) {
     min-height: 80vh;
-    margin-bottom: 30vh;
+    margin-bottom: 23vh;
   }
 }
 </style>
