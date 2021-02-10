@@ -56,43 +56,43 @@ export default {
 </script>
 
 <style lang="scss">
-    .dialog-image{
-        background-color: var(--black);
+.dialog-image {
+    background-color: var(--black);
+    display: inline-grid;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    &::-webkit-scrollbar {
+        width: .2em;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        border-radius: 6px;
+    }
+
+    &__content {
         display: inline-grid;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: -ms-autohiding-scrollbar;      
-
-        &::-webkit-scrollbar {
-            width: .2em;
-        }
-    
-        &::-webkit-scrollbar-track {
-            box-shadow: transparent;
-        }
-    
-        &::-webkit-scrollbar-thumb {
-            background-color: darkgrey;
-            border-radius: 6px;
-        }
-
-        &__content{
-            display: inline-grid;
-            max-width: 1000px;
-        }
+        max-width: 1000px;
     }
+}
 
-    .dragscroll {
-        cursor: -webkit-grab;
-        cursor: -moz-grab;
-        cursor: -o-grab;
-        cursor: grab;
-    }
+.dragscroll {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: -o-grab;
+    cursor: grab;
+}
 
 
-    .dragscroll:active {
-        cursor: -webkit-grabbing;
-        cursor: -moz-grabbing;
-        cursor: -o-grabbing;
-        cursor: grabbing;
-    }
+.dragscroll:active {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: -o-grabbing;
+    cursor: grabbing;
+}
 </style>

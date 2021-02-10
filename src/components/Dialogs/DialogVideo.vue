@@ -31,9 +31,5 @@
 .dialog-video{
     background-color: var(--black);
     display: inline-grid;
-    
-    &__iframe{
-
-    }
 }
 </style>

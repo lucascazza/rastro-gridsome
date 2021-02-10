@@ -63,39 +63,34 @@
                 }
             }
         },
-        methods: {
-            reserve() {
-                this.loading = true
-                setTimeout(() => (this.loading = false), 2000)
-            },
-        }
+        methods: {}
 	}
 </script>
 
 <style lang="scss">
-    .dialog-link{
-        background-color: var(--black);
-        display: inline-grid;
+.dialog-link {
+    background-color: var(--black);
+    display: inline-grid;
 
-        &__row{
-            display: contents;
-        }
+    &__row {
+        display: contents;
     }
+}
 
-    .v-card {
-        .v-divider{
-            border-color: #405C5F;
-        }
+.v-card {
+    .v-divider {
+        border-color: #405C5F;
     }
+}
 
-    .v-card__title,
-    .v-card__text,
-    .v-card__actions{
+.v-card__title,
+.v-card__text,
+.v-card__actions {
+    color: #ffffff;
+    background-color: var(--black);
+
+    div {
         color: #ffffff;
-        background-color: var(--black);
-
-        div{
-            color: #ffffff;
-        }
     }
+}
 </style>
