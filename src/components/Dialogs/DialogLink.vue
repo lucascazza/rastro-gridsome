@@ -1,5 +1,5 @@
 <template>
-    <v-dialog eager content-class="dialog-link" overlay-opacity=".7" v-model="showDialog" max-width="640">
+    <v-dialog eager content-class="dialog-link" overlay-opacity=".7" v-model="showDialog" :max-width="isMobile ? '400' : '640'">
         <v-card class="mx-auto my-12 dialog-link__vert" dark v-if="isMobile">
             <template slot="progress">
                 <v-progress-linear color="deep-purple" height="10" indeterminate></v-progress-linear>
@@ -127,7 +127,7 @@ export default {
         }
 
         .v-card__actions {
-            padding-bottom: 20px;
+            padding-bottom: 20px !important;
         }
 
         .v-divider {

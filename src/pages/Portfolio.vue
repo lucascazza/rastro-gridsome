@@ -141,7 +141,7 @@ export default {
               type: 'link',
               lazyImg: '../img/portfolio/grafico/lazy/logofolio-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/logofolio-t.jpg',
-              imgFull: '../img/portfolio/grafico/logofolio.png',
+              imgFull: '../img/portfolio/grafico/logofolio.jpg',
               link: 'https://drive.google.com/file/d/1-V8ie9_s2eUj5NdHIinnAoJY8n_yQBW3/view?usp=sharing',
               title: 'Juego Duracell',
               description: 'Un juego de carrera en el que deberás ir agarrando pilas duracell para más energía, esquivando los obstaculos y las pilas comunes'
@@ -151,7 +151,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/pauline-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/pauline-t.jpg',
-              imgFull: '../img/portfolio/grafico/pauline.png',
+              imgFull: '../img/portfolio/grafico/pauline.jpg',
               title: 'Pauline',
               description: 'Pauline description'
             },
@@ -196,7 +196,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/logofolio-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/logofolio-t.jpg',
-              imgFull: '../img/portfolio/grafico/logofolio.png',
+              imgFull: '../img/portfolio/grafico/logofolio.jpg',
               title: 'Logofolio',
               description: 'Logofolio description'
             },
@@ -205,7 +205,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/pauline-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/pauline-t.jpg',
-              imgFull: '../img/portfolio/grafico/pauline.png',
+              imgFull: '../img/portfolio/grafico/pauline.jpg',
               title: 'Pauline',
               description: 'Pauline description'
             },
