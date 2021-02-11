@@ -8,7 +8,7 @@
           <v-tab-item v-for="item in tabsItems" :key="item.name" background-color="#232323">
             <v-container fluid>
               <v-row>
-                <v-col v-for="work in item.trabajos" :key="work.name" cols="12" md="4">
+                <v-col v-for="work in item.works" :key="work.name" cols="12" md="4">
                   <v-img
                     class="portfolio-header__options--img"
                     :lazy-src="work.lazyImg" 
@@ -117,7 +117,7 @@ export default {
       tabsItems: [
         {
           name: '3d',
-          trabajos: [
+          works: [
             {
               name: 'lollapalooza',
               type: 'video',
@@ -168,11 +168,11 @@ export default {
         },
         {
           name: 'ilustracion',
-          trabajos: []          
+          works: []          
         },
         {
           name: 'grafico',
-          trabajos: [
+          works: [
             {
               name: 'lollapalooza',
               type: 'image',
@@ -180,7 +180,7 @@ export default {
               thumbnail: '../img/portfolio/grafico/thumbnails/lollapalooza-t.jpg',
               imgFull: '../img/portfolio/grafico/lollapalooza.jpg',
               title: 'Timeline Lollapalooza',
-              description: 'Timeline Lollapalooza'
+              description: 'Timeline Lollapalooza.'
             },
             {
               name: 'callia',
@@ -189,7 +189,7 @@ export default {
               thumbnail: '../img/portfolio/grafico/thumbnails/callia-t.jpg',
               imgFull: '../img/portfolio/grafico/callia.jpg',
               title: 'Callia',
-              description: 'Callia description'
+              description: 'Callia description.'
             },
             {
               name: 'logofolio',
@@ -198,7 +198,7 @@ export default {
               thumbnail: '../img/portfolio/grafico/thumbnails/logofolio-t.jpg',
               imgFull: '../img/portfolio/grafico/logofolio.jpg',
               title: 'Logofolio',
-              description: 'Logofolio description'
+              description: 'Logofolio description.'
             },
             {
               name: 'pauline',
@@ -207,7 +207,7 @@ export default {
               thumbnail: '../img/portfolio/grafico/thumbnails/pauline-t.jpg',
               imgFull: '../img/portfolio/grafico/pauline.jpg',
               title: 'Pauline',
-              description: 'Pauline description'
+              description: 'Pauline description.'
             },
             {
               name: 'temporada',
@@ -216,7 +216,7 @@ export default {
               thumbnail: '../img/portfolio/grafico/thumbnails/temporada-t.jpg',
               imgFull: '../img/portfolio/grafico/temporadajuegos.jpg',
               title: 'Temporada de juegos',
-              description: 'Temporada de juegos description'
+              description: 'Temporada de juegos description.'
             }
           ]
         },
@@ -227,7 +227,54 @@ export default {
           name: 'vfx'
         },
         {
-          name: 'motion'
+          name: 'motion',
+          works: [
+            {
+              name: 'galeno',
+              type: 'video',
+              lazyImg: '../img/portfolio/motion/lazy/galeno-l.jpg',
+              thumbnail: '../img/portfolio/motion/thumbnails/galeno-t.jpg',
+              link: 'https://www.youtube.com/embed/UeN0Peiz9w4',
+              title: 'Galeno',
+              description: 'Motion Galeno.'
+            },
+            {
+              name: 'jardin',
+              type: 'video',
+              lazyImg: '../img/portfolio/motion/lazy/jardin-l.jpg',
+              thumbnail: '../img/portfolio/motion/thumbnails/jardin-t.jpg',
+              link: 'https://www.youtube.com/embed/UeN0Peiz9w4',
+              title: 'Jardin Modelo',
+              description: 'Jardin Modelo video institucional.'
+            },
+            {
+              name: 'mapping',
+              type: 'video',
+              lazyImg: '../img/portfolio/motion/lazy/mapping-l.jpg',
+              thumbnail: '../img/portfolio/motion/thumbnails/mapping-t.jpg',
+              link: 'https://www.youtube.com/embed/UeN0Peiz9w4',
+              title: 'Mapping',
+              description: 'Motion Mapping en 3 esferas.'
+            },
+            {
+              name: 'nnv',
+              type: 'video',
+              lazyImg: '../img/portfolio/motion/lazy/nnv-l.jpg',
+              thumbnail: '../img/portfolio/motion/thumbnails/nnv-t.jpg',
+              link: 'https://www.youtube.com/embed/UeN0Peiz9w4',
+              title: 'NNV+',
+              description: 'NNV+ animación de logo.'
+            },
+            {
+              name: 'shiafu',
+              type: 'video',
+              lazyImg: '../img/portfolio/motion/lazy/shiafu-l.jpg',
+              thumbnail: '../img/portfolio/motion/thumbnails/shiafu-t.jpg',
+              link: 'https://www.youtube.com/embed/UeN0Peiz9w4',
+              title: 'Shiafu logo',
+              description: 'Shiafu animación de logo.'
+            }
+          ]
         },
         {
           name: 'campañas'
