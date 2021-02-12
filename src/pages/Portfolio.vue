@@ -123,18 +123,14 @@ export default {
               type: 'video',
               lazyImg: '../img/portfolio/grafico/lazy/lollapalooza-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/lollapalooza-t.jpg',
-              link: 'https://www.youtube.com/embed/UeN0Peiz9w4',
-              title: 'Timeline Lollapalooza',
-              description: 'Timeline Lollapalooza'
+              link: 'https://www.youtube.com/embed/UeN0Peiz9w4'
             },
             {
               name: 'callia',
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/callia-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/callia-t.jpg',
-              imgFull: '../img/portfolio/grafico/callia.jpg',
-              title: 'Callia',
-              description: 'Callia description'
+              imgFull: '../img/portfolio/grafico/callia.jpg'
             },
             {
               name: 'logofolio',
@@ -151,24 +147,56 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/pauline-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/pauline-t.jpg',
-              imgFull: '../img/portfolio/grafico/pauline.jpg',
-              title: 'Pauline',
-              description: 'Pauline description'
+              imgFull: '../img/portfolio/grafico/pauline.jpg'
             },
             {
               name: 'temporada',
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/temporada-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/temporada-t.jpg',
-              imgFull: '../img/portfolio/grafico/temporadajuegos.jpg',
-              title: 'Temporada de juegos',
-              description: 'Temporada de juegos description'
+              imgFull: '../img/portfolio/grafico/temporadajuegos.jpg'
             }
           ]
         },
         {
           name: 'ilustracion',
-          works: []          
+          works: [
+            {
+              name: 'calavera',
+              type: 'image',
+              lazyImg: '../img/portfolio/ilustracion/lazy/calavera-l.jpg',
+              thumbnail: '../img/portfolio/ilustracion/thumbnails/calavera-t.jpg',
+              imgFull: '../img/portfolio/ilustracion/calavera.jpg'
+            },
+            {
+              name: 'chorromander',
+              type: 'image',
+              lazyImg: '../img/portfolio/ilustracion/lazy/chorromander-l.jpg',
+              thumbnail: '../img/portfolio/ilustracion/thumbnails/chorromander-t.jpg',
+              imgFull: '../img/portfolio/ilustracion/chorromander.jpg'
+            },
+            {
+              name: 'pantuflo',
+              type: 'image',
+              lazyImg: '../img/portfolio/ilustracion/lazy/pantuflo-l.jpg',
+              thumbnail: '../img/portfolio/ilustracion/thumbnails/pantuflo-t.jpg',
+              imgFull: '../img/portfolio/ilustracion/pantuflo.jpg'
+            },
+            {
+              name: 'psp',
+              type: 'image',
+              lazyImg: '../img/portfolio/ilustracion/lazy/psp-l.jpg',
+              thumbnail: '../img/portfolio/ilustracion/thumbnails/psp-t.jpg',
+              imgFull: '../img/portfolio/ilustracion/psp.jpg'
+            },
+            {
+              name: 'ropa',
+              type: 'image',
+              lazyImg: '../img/portfolio/ilustracion/lazy/ropa-l.jpg',
+              thumbnail: '../img/portfolio/ilustracion/thumbnails/ropa-t.jpg',
+              imgFull: '../img/portfolio/ilustracion/ropa.jpg'
+            }
+          ]
         },
         {
           name: 'grafico',
@@ -178,50 +206,77 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/lollapalooza-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/lollapalooza-t.jpg',
-              imgFull: '../img/portfolio/grafico/lollapalooza.jpg',
-              title: 'Timeline Lollapalooza',
-              description: 'Timeline Lollapalooza.'
+              imgFull: '../img/portfolio/grafico/lollapalooza.jpg'
             },
             {
               name: 'callia',
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/callia-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/callia-t.jpg',
-              imgFull: '../img/portfolio/grafico/callia.jpg',
-              title: 'Callia',
-              description: 'Callia description.'
+              imgFull: '../img/portfolio/grafico/callia.jpg'
             },
             {
               name: 'logofolio',
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/logofolio-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/logofolio-t.jpg',
-              imgFull: '../img/portfolio/grafico/logofolio.jpg',
-              title: 'Logofolio',
-              description: 'Logofolio description.'
+              imgFull: '../img/portfolio/grafico/logofolio.jpg'
             },
             {
               name: 'pauline',
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/pauline-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/pauline-t.jpg',
-              imgFull: '../img/portfolio/grafico/pauline.jpg',
-              title: 'Pauline',
-              description: 'Pauline description.'
+              imgFull: '../img/portfolio/grafico/pauline.jpg'
             },
             {
               name: 'temporada',
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/temporada-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/temporada-t.jpg',
-              imgFull: '../img/portfolio/grafico/temporadajuegos.jpg',
-              title: 'Temporada de juegos',
-              description: 'Temporada de juegos description.'
+              imgFull: '../img/portfolio/grafico/temporadajuegos.jpg'
             }
           ]
         },
         {
-          name: 'fotomontaje'
+          name: 'fotomontaje',
+          works: [
+            {
+              name: 'alicia',
+              type: 'image',
+              lazyImg: '../img/portfolio/fotomontajes/lazy/alicia-l.jpg',
+              thumbnail: '../img/portfolio/fotomontajes/thumbnails/alicia-t.jpg',
+              imgFull: '../img/portfolio/fotomontajes/alicia.jpg'
+            },
+            {
+              name: 'mari',
+              type: 'video',
+              lazyImg: '../img/portfolio/fotomontajes/lazy/mari-l.jpg',
+              thumbnail: '../img/portfolio/fotomontajes/thumbnails/mari-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+            {
+              name: 'milton',
+              type: 'image',
+              lazyImg: '../img/portfolio/fotomontajes/lazy/milton-l.jpg',
+              thumbnail: '../img/portfolio/fotomontajes/thumbnails/milton-t.jpg',
+              imgFull: '../img/portfolio/fotomontajes/milton.jpg'
+            },
+            {
+              name: 'panda',
+              type: 'image',
+              lazyImg: '../img/portfolio/fotomontajes/lazy/panda-l.jpg',
+              thumbnail: '../img/portfolio/fotomontajes/thumbnails/panda-t.jpg',
+              imgFull: '../img/portfolio/fotomontajes/panda.jpg'
+            },
+            {
+              name: 'perfume',
+              type: 'image',
+              lazyImg: '../img/portfolio/fotomontajes/lazy/perfume-l.jpg',
+              thumbnail: '../img/portfolio/fotomontajes/thumbnails/perfume-t.jpg',
+              imgFull: '../img/portfolio/fotomontajes/perfume.jpg'
+            }
+          ]          
         },
         {
           name: 'vfx'
@@ -234,45 +289,35 @@ export default {
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/galeno-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/galeno-t.jpg',
-              link: 'https://www.youtube.com/embed/UeN0Peiz9w4',
-              title: 'Galeno',
-              description: 'Motion Galeno.'
+              link: 'https://www.youtube.com/embed/UeN0Peiz9w4'
             },
             {
               name: 'jardin',
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/jardin-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/jardin-t.jpg',
-              link: 'https://www.youtube.com/embed/UeN0Peiz9w4',
-              title: 'Jardin Modelo',
-              description: 'Jardin Modelo video institucional.'
+              link: 'https://www.youtube.com/embed/UeN0Peiz9w4'
             },
             {
               name: 'mapping',
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/mapping-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/mapping-t.jpg',
-              link: 'https://www.youtube.com/embed/UeN0Peiz9w4',
-              title: 'Mapping',
-              description: 'Motion Mapping en 3 esferas.'
+              link: 'https://www.youtube.com/embed/UeN0Peiz9w4'
             },
             {
               name: 'nnv',
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/nnv-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/nnv-t.jpg',
-              link: 'https://www.youtube.com/embed/UeN0Peiz9w4',
-              title: 'NNV+',
-              description: 'NNV+ animación de logo.'
+              link: 'https://www.youtube.com/embed/UeN0Peiz9w4'
             },
             {
               name: 'shiafu',
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/shiafu-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/shiafu-t.jpg',
-              link: 'https://www.youtube.com/embed/UeN0Peiz9w4',
-              title: 'Shiafu logo',
-              description: 'Shiafu animación de logo.'
+              link: 'https://www.youtube.com/embed/UeN0Peiz9w4'
             }
           ]
         },

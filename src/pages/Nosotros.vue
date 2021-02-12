@@ -36,24 +36,24 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
             <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
             <div class="about__row-text">
               <h2 class="web__subtitle">Lucas Scazzariello</h2>
-              <p class="web__text strong">Web Desing & Developer.</p>
-              <p class="web__text">El encargado de dejar la huella de <span>RASTRO</span> en cada web/app en la que nos toque trabajar.</p>
+              <p class="web__text strong">Diseñador y desarrollador web</p>
+              <p class="web__text">El encargado de dejar la huella de <span>rastro</span> en cada web y app en la que estemos trabajando.</p>
             </div>
           </div>
           <div class="about__feature about__feature--2">
             <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
             <div class="about__row-text">
               <h2 class="web__subtitle">Manu Messina</h2>
-              <p class="web__text strong">Web Desing & Developer.</p>
-              <p class="web__text">El encargado de dejar la huella de <span>RASTRO</span> en cada web/app en la que nos toque diseñar.</p>
+              <p class="web__text strong">Artista VFX - Artista audiovisual</p>
+              <p class="web__text">El especialista en efectos visuales, un rol importantísimo para darle <span>vida y magia</span> a nuestras piezas audiovisuales.</p>
             </div>
           </div>
           <div class="about__feature about__feature--3">
             <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
             <div class="about__row-text">
               <h2 class="web__subtitle">Marian Esain</h2>
-              <p class="web__text strong">Web Desing & Developer.</p>
-              <p class="web__text">El encargado de dejar la huella de <span>RASTRO</span> en cada web/app en la que nos toque diseñar.</p>
+              <p class="web__text strong">Diseñadora gráfica</p>
+              <p class="web__text">La comunicadora visual que convierte nuestras <span>ideas en el arte</span> que vemos día a día.</p>
             </div>
           </div>
         </div>
@@ -62,16 +62,16 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
             <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
             <div class="about__row-text">
               <h2 class="web__subtitle">Jejo Mordini</h2>
-              <p class="web__text strong">Web Desing & Developer.</p>
-              <p class="web__text">El encargado de dejar la huella de <span>RASTRO</span> en cada web/app en la que nos toque diseñar.</p>
+              <p class="web__text strong">Diseñador UX/UI</p>
+              <p class="web__text">El responsable de mejorar las experiencias. Gracias a su ojo crítico, <span>mide y optimiza</span> cada uno de los procesos creativos.</p>
             </div>
           </div>
           <div class="about__feature about__feature--2">
             <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
             <div class="about__row-text">
               <h2 class="web__subtitle">Javi Silva</h2>
-              <p class="web__text strong">Web Desing & Developer.</p>
-              <p class="web__text">El encargado de dejar la huella de <span>RASTRO</span> en cada web/app en la que nos toque diseñar.</p>
+              <p class="web__text strong">Ilustrador digital</p>
+              <p class="web__text">Nuestro caballito de batalla: tan multimedial como se puede hacer, <span>un artista</span> que se adapta a todo lo que haya que hacer y un ilustrador alucinante.</p>
             </div>
           </div>
         </div>
