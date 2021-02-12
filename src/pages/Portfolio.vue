@@ -166,7 +166,8 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/ilustracion/lazy/calavera-l.jpg',
               thumbnail: '../img/portfolio/ilustracion/thumbnails/calavera-t.jpg',
-              imgFull: '../img/portfolio/ilustracion/calavera.jpg'
+              imgFull: '../img/portfolio/ilustracion/calavera.jpg',
+              small: true
             },
             {
               name: 'chorromander',

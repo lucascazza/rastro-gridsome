@@ -1,5 +1,5 @@
 <template>
-    <v-dialog eager content-class="dialog-image dragscroll" overlay-opacity=".7" v-model="showDialog" max-width="1000">
+    <v-dialog eager content-class="dialog-image dragscroll" overlay-opacity=".7" v-model="showDialog" :max-width="work.small ? '600' : '1000'">
         <div class="dialog-image__content">
             <img class="img-responsive" :src="work.imgFull" />
         </div>
@@ -78,6 +78,11 @@ export default {
     &__content {
         display: inline-grid;
         max-width: 1000px;
+
+        .img-responsive{
+            width: auto;
+            margin: auto;
+        }
     }
 }
 
