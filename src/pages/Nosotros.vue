@@ -33,7 +33,9 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
       <div class="about">
         <div class="about__row-1">
           <div class="about__feature about__feature--1">
-            <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
+            <div class="about__feature--img">
+              <g-image src="~/assets/web/img/about/fotos/lucas.jpg" alt="Lucas Scazzariello" />
+            </div>
             <div class="about__row-text">
               <h2 class="web__subtitle">Lucas Scazzariello</h2>
               <p class="web__text strong">Diseñador y desarrollador web</p>
@@ -41,7 +43,9 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
             </div>
           </div>
           <div class="about__feature about__feature--2">
-            <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
+            <div class="about__feature--img">
+              <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
+            </div>
             <div class="about__row-text">
               <h2 class="web__subtitle">Manu Messina</h2>
               <p class="web__text strong">Artista VFX - Artista audiovisual</p>
@@ -49,7 +53,9 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
             </div>
           </div>
           <div class="about__feature about__feature--3">
-            <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
+            <div class="about__feature--img">
+              <g-image src="~/assets/web/img/about/fotos/mari.jpg" alt="Mariana Esain" />
+            </div>
             <div class="about__row-text">
               <h2 class="web__subtitle">Marian Esain</h2>
               <p class="web__text strong">Diseñadora gráfica</p>
@@ -59,7 +65,9 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
         </div>
         <div class="about__row-2">
           <div class="about__feature about__feature--1">
-            <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
+            <div class="about__feature--img">
+              <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
+            </div>
             <div class="about__row-text">
               <h2 class="web__subtitle">Jejo Mordini</h2>
               <p class="web__text strong">Diseñador UX/UI</p>
@@ -67,7 +75,9 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
             </div>
           </div>
           <div class="about__feature about__feature--2">
-            <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
+            <div class="about__feature--img">
+              <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
+            </div>
             <div class="about__row-text">
               <h2 class="web__subtitle">Javi Silva</h2>
               <p class="web__text strong">Ilustrador digital</p>
