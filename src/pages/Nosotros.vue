@@ -87,9 +87,9 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
         </div>
       </div>
     </Container>
-    <Container tag="section" fullScreen class="about-grid">
+    <!-- <Container tag="section" fullScreen class="about-grid">
       <g-image src="~/assets/web/img/about/logo-grilla.svg" alt="Grilla" />
-    </Container>
+    </Container> -->
     <Container tag="section" fullScreen class="about-footer-content">
       <FooterContent></FooterContent>
     </Container>
