@@ -1,9 +1,7 @@
 <template>
 <div data-app>
   <Header />
-  <main class="web__content">
-    <slot />
-  </main>
+  <slot/>
 </div>
   
 </template>

@@ -1,9 +1,9 @@
 <template>
     <Container tag="footer" fullScreen class="main-footer">
-        <g-image class="img-responsive main-footer__logo" src="~/assets/web/img/footer/footer-background-verde.svg" alt="Footer logo" />
+        <g-image class="img-responsive main-footer__logo" src="~/assets/web/img/footer/footer-background.svg" alt="Footer logo" />
         <Container tag="div" class="main-footer__content">
           <p>Copyright © 2021 Rastro</p>
-          <g-image class="img-responsive" src="~/assets/web/img/logo-only.svg" alt="Logo" />                
+          <g-image class="img-responsive" src="~/assets/web/img/logo-bn.svg" alt="Logo" />                
           <div class="main-footer__content--redes">
             <a href="">
               <i class="icon-instagram"></i>
@@ -59,7 +59,7 @@ export default {
 </script>
 <style lang="scss" scoped>
   .main-footer {
-    background: #314430;
+    background: #f6f6f6;
     position: relative;
     padding: 0;
 
@@ -83,6 +83,7 @@ export default {
 
       p {
         font-size: 1rem;
+        color: #232323;
       }
 
       .img-responsive{
@@ -115,7 +116,7 @@ export default {
           }
 
           i {
-            color: #fff;
+            color: #232323;
             font-size: 36px;
 
             @media (min-width: 768px){

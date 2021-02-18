@@ -76,7 +76,7 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
           </div>
           <div class="about__feature about__feature--2">
             <div class="about__feature--img">
-              <g-image src="~/assets/web/img/about/circulo.svg" alt="Circulo" />
+              <g-image src="~/assets/web/img/about/fotos/javi.jpg" alt="Javier Silva" />
             </div>
             <div class="about__row-text">
               <h2 class="web__subtitle">Javi Silva</h2>
