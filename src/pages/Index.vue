@@ -186,7 +186,6 @@
         </div>
         <ScrollTopButton></ScrollTopButton>
       </Scrollama>
-      <MainFooter />
     </ClientOnly>
   </Layout>
 </template>
@@ -195,12 +194,10 @@
 import "intersection-observer";
 import Container from '~/components/Container.vue';
 import FooterContent from '~/components/FooterContent';
-import MainFooter from '~/components/MainFooter';
 import ScrollTopButton from '~/components/ScrollTopButton'
 export default {
   components: {
     Container,
-    MainFooter,
     FooterContent,
     ScrollTopButton,
     Scrollama: () => 

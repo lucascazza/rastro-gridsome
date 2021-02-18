@@ -36,7 +36,6 @@
       <FooterContent></FooterContent>
     </Container>
     <ScrollTopButton></ScrollTopButton>
-    <MainFooter />
     <dialog-image
       :active.sync="showDialogImage"
       :work="workSelected"/>
@@ -53,7 +52,6 @@
 import Container from '~/components/Container.vue';
 import FooterContent from '~/components/FooterContent';
 import ScrollTopButton from '~/components/ScrollTopButton';
-import MainFooter from '~/components/MainFooter';
 import DialogImage from '~/components/Dialogs/DialogImage';
 import DialogVideo from '~/components/Dialogs/DialogVideo';
 import DialogLink from '~/components/Dialogs/DialogLink';
@@ -62,7 +60,6 @@ export default {
     Container,
     FooterContent,
     ScrollTopButton,
-    MainFooter,
     'dialog-image': DialogImage,
     'dialog-video': DialogVideo,
     'dialog-link': DialogLink
