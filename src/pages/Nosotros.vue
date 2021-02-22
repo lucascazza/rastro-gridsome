@@ -29,8 +29,67 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
       <div class="about-content__text-principal">
         <h2 class="web__subtitle">5 pibxs con convicciones</h2>
         <p class="web__text">Un grupo de chicos con ancias de crecer, de desenvolverse, de estar en constante aprendizaje, pero por sobre todo, con ganas de diseñar.</p>   
-      </div>   
-      <div class="about">
+      </div>
+      <Container tag="div">
+        <div class="about">
+          <div class="about__card">
+            <div class="about__card--img">
+              <g-image src="~/assets/web/img/about/fotos/lucas.jpg" alt="Lucas Scazzariello" />
+            </div>
+            <div class="about__card--text">
+              <h2 class="web__subtitle">Lucas Scazzariello</h2>
+              <p class="web__text strong">Diseñador y desarrollador web</p>
+              <p class="web__text">El encargado de dejar la huella de <span>rastro</span> en cada web y app en la que
+                estemos trabajando.</p>
+            </div>
+          </div>
+          <div class="about__card">
+            <div class="about__card--img">
+              <g-image src="~/assets/web/img/about/fotos/lucas.jpg" alt="Lucas Scazzariello" />
+            </div>
+            <div class="about__card--text">
+              <h2 class="web__subtitle">Lucas Scazzariello</h2>
+              <p class="web__text strong">Diseñador y desarrollador web</p>
+              <p class="web__text">El encargado de dejar la huella de <span>rastro</span> en cada web y app en la que
+                estemos trabajando.</p>
+            </div>
+          </div>
+          <div class="about__card">
+            <div class="about__card--img">
+              <g-image src="~/assets/web/img/about/fotos/lucas.jpg" alt="Lucas Scazzariello" />
+            </div>
+            <div class="about__card--text">
+              <h2 class="web__subtitle">Lucas Scazzariello</h2>
+              <p class="web__text strong">Diseñador y desarrollador web</p>
+              <p class="web__text">El encargado de dejar la huella de <span>rastro</span> en cada web y app en la que
+                estemos trabajando.</p>
+            </div>
+          </div>
+          <div class="about__card">
+            <div class="about__card--img">
+              <g-image src="~/assets/web/img/about/fotos/lucas.jpg" alt="Lucas Scazzariello" />
+            </div>
+            <div class="about__card--text">
+              <h2 class="web__subtitle">Lucas Scazzariello</h2>
+              <p class="web__text strong">Diseñador y desarrollador web</p>
+              <p class="web__text">El encargado de dejar la huella de <span>rastro</span> en cada web y app en la que
+                estemos trabajando.</p>
+            </div>
+          </div>
+          <div class="about__card">
+            <div class="about__card--img">
+              <g-image src="~/assets/web/img/about/fotos/lucas.jpg" alt="Lucas Scazzariello" />
+            </div>
+            <div class="about__card--text">
+              <h2 class="web__subtitle">Lucas Scazzariello</h2>
+              <p class="web__text strong">Diseñador y desarrollador web</p>
+              <p class="web__text">El encargado de dejar la huella de <span>rastro</span> en cada web y app en la que
+                estemos trabajando.</p>
+            </div>
+          </div>
+        </div>
+      </Container>
+      <!-- <div class="about">
         <div class="about__row-1">
           <div class="about__feature about__feature--1">
             <div class="about__feature--img">
@@ -85,11 +144,8 @@ Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. 
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </Container>
-    <!-- <Container tag="section" fullScreen class="about-grid">
-      <g-image src="~/assets/web/img/about/logo-grilla.svg" alt="Grilla" />
-    </Container> -->
     <Container tag="section" fullScreen class="about-footer-content">
       <FooterContent></FooterContent>
     </Container>
