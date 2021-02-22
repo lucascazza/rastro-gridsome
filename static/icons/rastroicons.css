@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'rastroicons';
-  src:  url('./rastroicons.eot?vn69h6');
-  src:  url('./rastroicons.eot?vn69h6#iefix') format('embedded-opentype'),
-    url('./rastroicons.ttf?vn69h6') format('truetype'),
-    url('./rastroicons.woff?vn69h6') format('woff'),
-    url('./rastroicons.svg?vn69h6#rastroicons') format('svg');
+  src:  url('./rastroicons.eot?sdt8dv');
+  src:  url('./rastroicons.eot?sdt8dv#iefix') format('embedded-opentype'),
+    url('./rastroicons.ttf?sdt8dv') format('truetype'),
+    url('./rastroicons.woff?sdt8dv') format('woff'),
+    url('./rastroicons.svg?sdt8dv#rastroicons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,18 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-email:before {
+  content: "\e902";
+}
+.icon-youtube:before {
+  content: "\e904";
+}
 .icon-3d:before {
   content: "\e900";
 }
 .icon-behance:before {
   content: "\e901";
 }
-.icon-google:before {
-  content: "\e902";
-}
 .icon-instagram:before {
   content: "\e903";
-}
-.icon-youtube:before {
-  content: "\e904";
 }

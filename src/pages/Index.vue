@@ -74,34 +74,33 @@
                 <source src="media/ilustracion-home.mp4" type="video/mp4">
               </video>
             </div>
-            <div v-if="isMobile" class="home-paso__content--options-mobile">
-              <div class="item-col">
-                <div class="item-col__item" :class="{'active' : stepTrabajos == 1}" @click="stepTrabajos = 1">
-                  <i class="icon-3d"></i>
-                  <p>3D</p>
+            <div v-if="isMobile">
+              <div class="home-paso__content--options-mobile">
+                <div class="item-col">
+                  <div class="item-col__item" :class="{'active' : stepTrabajos == 1}" @click="stepTrabajos = 1">
+                    <i class="icon-3d"></i>
+                  </div>
+                </div>
+                <div class="item-col">
+                  <div class="item-col__item" :class="{'active' : stepTrabajos == 2}" @click="stepTrabajos = 2">
+                    <i class="icon-3d"></i>
+                  </div>
+                </div>
+                <div class="item-col">
+                  <div class="item-col__item" :class="{'active' : stepTrabajos == 3}" @click="stepTrabajos = 3">
+                    <i class="icon-3d"></i>
+                  </div>
+                </div>
+                <div class="item-col">
+                  <div class="item-col__item" :class="{'active' : stepTrabajos == 4}" @click="stepTrabajos = 4">
+                    <i class="icon-3d"></i>
+                  </div>
                 </div>
               </div>
-
-              <div class="item-col">
-                <div class="item-col__item" :class="{'active' : stepTrabajos == 2}" @click="stepTrabajos = 2">
-                  <i class="icon-3d"></i>
-                  <p>VFX</p>
-                </div>
-              </div>
-
-              <div class="item-col">
-                <div class="item-col__item" :class="{'active' : stepTrabajos == 3}" @click="stepTrabajos = 3">
-                  <i class="icon-3d"></i>
-                  <p>Montajes</p>
-                </div>
-              </div>
-
-              <div class="item-col">
-                <div class="item-col__item" :class="{'active' : stepTrabajos == 4}" @click="stepTrabajos = 4">
-                  <i class="icon-3d"></i>
-                  <p>Ilust</p>
-                </div>
-              </div>
+              <h3 class="home-paso__content--title" v-if="stepTrabajos == 1">Modelos 3D</h3>
+              <h3 class="home-paso__content--title" v-if="stepTrabajos == 2">Efectos visuales</h3>
+              <h3 class="home-paso__content--title" v-if="stepTrabajos == 3">Fotomontajes</h3>
+              <h3 class="home-paso__content--title" v-if="stepTrabajos == 4">Ilustraciones</h3>
             </div>
           </Container>
         </Container>
@@ -114,9 +113,9 @@
           </div>
           <div class="home-adaptar__img">
             <g-image class="img-laptop" src="~/assets/web/img/home/adaptar/laptop-celu.svg" alt="Laptop" />
-            <g-image v-show="stepImage == 1" class="img-fondo" src="~/assets/web/img/home/adaptar/agrodreams.png" alt="Agrodreams" />
-            <g-image v-show="stepImage == 2" class="img-fondo" src="~/assets/web/img/home/adaptar/subastas.png" alt="Subastas Banco Ciudad" />
-            <g-image v-show="stepImage == 3" class="img-fondo" src="~/assets/web/img/home/adaptar/aqualine.png" alt="Aqualine" />
+            <g-image v-if="stepImage == 1" class="img-fondo" src="~/assets/web/img/home/adaptar/agrodreams.png" alt="Agrodreams" />
+            <g-image v-if="stepImage == 2" class="img-fondo" src="~/assets/web/img/home/adaptar/subastas.png" alt="Subastas Banco Ciudad" />
+            <g-image v-if="stepImage == 3" class="img-fondo" src="~/assets/web/img/home/adaptar/aqualine.png" alt="Aqualine" />
             <g-image class="img-background" src="~/assets/web/img/home/fondo-adaptar.svg" alt="Fondo adaptar" />
           </div>
           <div class="stepsImages" v-if="!isMobile">
@@ -142,69 +141,25 @@
               <div class="movimiento-items">
                 <div class="movimiento-items__item">
                   <div class="movimiento-items__item--img">
-                    <g-image src="~/assets/web/img/home/movimiento/item1.svg" alt="Item movimiento" />
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
-                      style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                      <g>
-                        <g>
-                          <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
-			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
-			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
-                        </g>
-                      </g>
-                    </svg>
+                    <g-image src="~/assets/web/img/home/movimiento/mente-nb.png" alt="Abrí la mente" />
                   </div>
                   <p class="web__text">Abrí la mente</p>
                 </div>
                 <div class="movimiento-items__item">
                   <div class="movimiento-items__item--img">
-                    <g-image src="~/assets/web/img/home/movimiento/item2.svg" alt="Item movimiento" />
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
-                      style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                      <g>
-                        <g>
-                          <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
-			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
-			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
-                        </g>
-                      </g>
-                    </svg>
+                    <g-image src="~/assets/web/img/home/movimiento/moverse-nb.png" alt="Hay que moverse" />
                   </div>
                   <p class="web__text">Hay que moverse</p>
                 </div>
                 <div class="movimiento-items__item">
                   <div class="movimiento-items__item--img">
-                    <g-image src="~/assets/web/img/home/movimiento/item3.svg" alt="Item movimiento" />
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
-                      style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                      <g>
-                        <g>
-                          <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
-			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
-			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
-                        </g>
-                      </g>
-                    </svg>
+                    <g-image src="~/assets/web/img/home/movimiento/caerte-nb.png" alt="Podés caerte" />
                   </div>
                   <p class="web__text">Podés caerte</p>
                 </div>
                 <div class="movimiento-items__item">
                   <div class="movimiento-items__item--img">
-                    <g-image src="~/assets/web/img/home/movimiento/item4.svg" alt="Item movimiento" />
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
-                      style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                      <g>
-                        <g>
-                          <path class="st0" d="M40.26,35.54V18.58l-13.94-7.2V4.98h-2.63v6.39l-13.94,7.2v16.97L2.86,39.1l1.21,2.33l6.99-3.61L25,45.02
-			l13.94-7.2l6.99,3.61l1.21-2.33L40.26,35.54z M23.69,41.39l-11.32-5.85V21.53l11.32,5.85V41.39z M25,25.1l-11.08-5.73L25,13.65
-			l11.08,5.73L25,25.1z M37.63,35.54l-11.32,5.85V27.38l11.32-5.85V35.54z" />
-                        </g>
-                      </g>
-                    </svg>
+                    <g-image src="~/assets/web/img/home/movimiento/atreverse-nb.png" alt="Hay que atreverse" />
                   </div>
                   <p class="web__text">Hay que atreverse</p>
                 </div>
@@ -236,15 +191,13 @@
 </template>
 
 <script>
-import "intersection-observer"
-import Container from '~/components/Container.vue'
-import FooterContent from '~/components/FooterContent'
-import MainFooter from "~/components/MainFooter"
+import "intersection-observer";
+import Container from '~/components/Container.vue';
+import FooterContent from '~/components/FooterContent';
 import ScrollTopButton from '~/components/ScrollTopButton'
 export default {
   components: {
     Container,
-    MainFooter,
     FooterContent,
     ScrollTopButton,
     Scrollama: () => 
@@ -286,7 +239,7 @@ export default {
       } else {
         this.stepImage += 1
       }
-    }, 3000);
+    }, 5000);
   },
   methods: {
     stepEnterHandler ({element, index, direction}) {

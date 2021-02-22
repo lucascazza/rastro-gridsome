@@ -121,6 +121,8 @@
   &__text-principal {
     max-width: 700px;
     margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
     .web__subtitle {
       margin-bottom: 1rem;
@@ -131,8 +133,21 @@
     padding: 5em 15px;
     margin: 2em 0;
 
-    img {
-      margin-bottom: .8rem;
+    &--img {
+      max-width: 270px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: .85rem;
+
+      img {
+        max-width: 100%;
+        display: flex;
+        filter: grayscale(.9);
+
+        &:hover{
+          filter: grayscale(0);
+        }
+      }
     }
   }
 
@@ -149,6 +164,14 @@
         background-image: url('/img/about/background-mobile02.svg');
         background-size: cover;
       }
+
+      .about__feature--1,
+      .about__feature--2,
+      .about__feature--3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     .about__row-2 {
@@ -157,7 +180,15 @@
         background-image: url('/img/about/background-mobile01.svg');
         background-size: cover;
       }
+
+      .about__feature--1,
+      .about__feature--2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+      }
     }
+
   }
 
   @media (min-width: 992px) {
@@ -175,14 +206,14 @@
       background-position: top right;
       background-repeat: no-repeat;
       background-size: contain;
-      padding: 0 10rem;
+      padding: 0 13rem;
       margin-top: -6rem;
       display: flex;
       flex-wrap: wrap;
 
       .about__feature--1,
       .about__feature--2 {
-        width: 50%;
+        width: 45%;
       }
 
       .about__feature--1 {
@@ -195,25 +226,34 @@
         text-align: right;
         position: relative;
         top: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
       }
 
       .about__feature--3 {
         text-align: left;
-        width: 50%;
+        width: 45%;
         position: relative;
         bottom: 10rem;
       }
     }
 
     .about__row-2 {
-      padding: 0 10rem;
+      padding: 0 13rem;
       display: flex;
       flex-wrap: wrap;
       position: relative;
-      bottom: 18rem;
+      bottom: 15rem;
 
       .about__feature--1 {
-        padding-left: 50%;
+        text-align: right;
+        position: relative;
+        top: -6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-left: 55%;
       }
 
       .about__feature--1,
@@ -224,13 +264,13 @@
       .about__feature--2 {
         text-align: left;
         position: relative;
-        bottom: 15rem;
+        bottom: 20rem;
         margin-bottom: 0;
       }
 
       .about__feature--2,
       .about__feature--3 {
-        width: 50%;
+        width: 45%;
       }
 
       .about__feature--3 {
@@ -275,8 +315,21 @@
 
   span {
     color: var(--yellow);
-    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-size: .9rem;
     font-weight: 700;
+
+    @media (min-width: 768px) {
+      font-size: 1.1rem;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 1.25rem;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 1.35rem;
+    }
   }
 }
 
@@ -353,17 +406,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../assets/web/img/about/fondo-grid-mobile.svg);
+  background-image: url('/img/about/fondo-grid-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 
   @media (min-width: 460px) {
-    background-image: url(../assets/web/img/about/fondo-grid-768.svg);
+    background-image: url('/img/about/fondo-grid-768.svg');
   }
 
   @media (min-width: 768px) {
-    // background-image: url(../assets/web/img/about/fondo-grid-768.svg);
+    // background-image: url('/img/about/fondo-grid-768.svg');
     // background-repeat: no-repeat;
     // background-size: contain;
     // background-position: center center;
@@ -371,19 +424,19 @@
   }
 
   @media (min-width: 992px) {
-    background-image: url(../assets/web/img/about/fondo-grid-992.svg);
+    background-image: url('/img/about/fondo-grid-992.svg');
   }
 
   @media (min-width: 1200px) {
-    background-image: url(../assets/web/img/about/fondo-grid-1200.svg);
+    background-image: url('/img/about/fondo-grid-1200.svg');
   }
 
   @media (min-width: 1400px) {
-    background-image: url(../assets/web/img/about/fondo-grid-1400.svg);
+    background-image: url('/img/about/fondo-grid-1400.svg');
   }
 
   @media (min-width: 1600px) {
-    background-image: url(../assets/web/img/about/fondo-grid.svg);
+    background-image: url('/img/about/fondo-grid.svg');
   }
 
   img {
@@ -408,11 +461,15 @@
 }
 
 .about-footer-content {
-  background-image: url(../assets/web/img/home/fondo-home-footer.svg);
+  background-image: url(../assets/web/img/fondo-footer-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: 768px) {
+    background-image: url(../assets/web/img/fondo-footer.svg);
+  }
 }
