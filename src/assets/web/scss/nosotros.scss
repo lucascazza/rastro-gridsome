@@ -189,7 +189,7 @@
 }
 
 .about{
-  padding: 4rem 0;
+  padding: 3rem 0;
   &__card{
     display: flex;
     align-items: center;
@@ -198,7 +198,7 @@
     border-radius: 6px;
     max-width: 1000px;
     margin: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     flex-direction: column;
 
     &--img{
@@ -214,8 +214,12 @@
         height: auto;
         display: flex;
         filter: grayscale(1);
+      }
+    }
 
-        &:hover{
+    &:hover{
+      .about__card--img{
+        img{
           filter: grayscale(.3);
         }
       }
@@ -278,6 +282,91 @@
         .about__card--img{
           display: flex;
           justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px){
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    justify-content: center;
+    padding: 4rem 0;
+
+    &__row{
+      width: 50%;
+      padding: 0 1rem;
+    }
+
+    &__card{
+      flex-direction: column !important;
+      align-items: center;
+      padding: 20px;
+      height: 440px;
+      margin-bottom: 2rem;
+
+      &--img{
+        width: 50%;
+        margin: initial;
+        margin-bottom: 1.25rem;
+      }
+
+      &--text{
+        padding: 0;
+        .web__subtitle,
+        .web__text.strong{
+          text-align: center;
+        }
+        .web__text.strong{
+          margin-bottom: .75rem;
+        }
+
+        .web__text:not(.strong){
+          font-size: 1.2rem;
+
+          span{
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1200px){
+    &__row{
+      width: 33.33333%;
+    }
+
+    &__card{
+      height: 480px;
+      &--img{
+        width: 70%;
+      }
+
+      &--text{
+        .web__subtitle{
+          font-size: 1.85rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1600px){
+    &__row{
+      width: 33.33333%;
+    }
+
+    &__card{
+      &--img{
+        width: 60%;
+      }
+
+      &--text{
+        .web__subtitle{
+          font-size: 2rem;
         }
       }
     }
