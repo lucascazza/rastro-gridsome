@@ -12,6 +12,9 @@
               <i class="icon-youtube"></i>
             </a>
             <a href="">
+              <i class="icon-vimeo"></i>
+            </a>
+            <a href="">
               <i class="icon-behance"></i>
             </a>
             <a href="">

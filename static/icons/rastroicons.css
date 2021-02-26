@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'rastroicons';
-  src:  url('./rastroicons.eot?sdt8dv');
-  src:  url('./rastroicons.eot?sdt8dv#iefix') format('embedded-opentype'),
-    url('./rastroicons.ttf?sdt8dv') format('truetype'),
-    url('./rastroicons.woff?sdt8dv') format('woff'),
-    url('./rastroicons.svg?sdt8dv#rastroicons') format('svg');
+  src:  url('./rastroicons.eot?rcrm5y');
+  src:  url('./rastroicons.eot?rcrm5y#iefix') format('embedded-opentype'),
+    url('./rastroicons.ttf?rcrm5y') format('truetype'),
+    url('./rastroicons.woff?rcrm5y') format('woff'),
+    url('./rastroicons.svg?rcrm5y#rastroicons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-compare-arrows:before {
+  content: "\e90e";
+}
+.icon-arrow-down:before {
+  content: "\e905";
+}
+.icon-arrow-down_circle:before {
+  content: "\e906";
+}
+.icon-arrow-left:before {
+  content: "\e907";
+}
+.icon-arrow-left_circle:before {
+  content: "\e908";
+}
+.icon-arrow-right:before {
+  content: "\e909";
+}
+.icon-arrow-right_circle:before {
+  content: "\e90a";
+}
+.icon-arrow-up:before {
+  content: "\e90b";
+}
+.icon-arrow-up_circle:before {
+  content: "\e90c";
+}
+.icon-vimeo:before {
+  content: "\e90d";
+}
 .icon-email:before {
   content: "\e902";
 }

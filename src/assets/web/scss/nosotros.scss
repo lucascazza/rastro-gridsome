@@ -223,6 +223,14 @@
           filter: grayscale(.3);
         }
       }
+
+      .about__card--text{
+        .web__text{
+          span{
+            color: var(--magenta);
+          }
+        }
+      }
     }
 
     &--text{
@@ -245,7 +253,6 @@
           font-size: 1rem;
           text-transform: uppercase;
           font-family: 'OswaldBold';
-          color: var(--magenta);
         }
       }
     }
