@@ -29,7 +29,7 @@
         </v-card>
 
         <v-card dark v-else class="dialog-link__horizontal">
-            <div class="d-flex align-center justify-space-between">
+            <div class="d-flex align-center dialog-link__horizontal--content">
                 <div>
                     <v-card-title class="headline" v-text="work.title"></v-card-title>
 
@@ -147,6 +147,10 @@ export default {
     }
 
     &__horizontal{
+
+        &--content{
+            justify-content: space-between;
+        }
         
         &--img{
             max-width: 30%;

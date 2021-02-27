@@ -347,8 +347,19 @@ export default {
               imgFull: '../img/portfolio/appsjuegos/duracell.jpg',
               imgFullVert: '../img/portfolio/appsjuegos/duracellvert.jpg',
               link: 'https://drive.google.com/file/d/1-V8ie9_s2eUj5NdHIinnAoJY8n_yQBW3/view?usp=sharing',
-              title: 'Juego Duracell',
-              description: 'Un juego de carrera en el que deberás ir agarrando pilas duracell para sumar energía, esquivando los obstaculos y las pilas comunes'
+              title: 'Duracell El Juego ',
+              description: 'Un juego de carrera en el que deberás agarrar pilas duracell para sumar energía, mientras esquivas los obstaculos y las pilas comunes'
+            },
+            {
+              name: 'yogurisimo',
+              type: 'link',
+              lazyImg: '../img/portfolio/appsjuegos/lazy/yogurisimo-l.jpg',
+              thumbnail: '../img/portfolio/appsjuegos/thumbnails/yogurisimo-t.jpg',
+              imgFull: '../img/portfolio/appsjuegos/yogurisimo.jpg',
+              imgFullVert: '../img/portfolio/appsjuegos/yogurisimovert.jpg',
+              link: 'https://drive.google.com/file/d/1QXyGDgjSmpRjbYUqnIgi65rRlULbUrl0/view?usp=sharing',
+              title: 'Yogurisimo Rusia 2018 ',
+              description: 'Un juego de persecución'
             },
           ]
         },
