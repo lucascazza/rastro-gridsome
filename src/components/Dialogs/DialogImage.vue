@@ -3,6 +3,9 @@
         <div class="dialog-image__content">
             <img class="img-responsive" :src="work.imgFull" />
         </div>
+        <div v-if="work.btn" class="dialog-image__btn">
+            <v-btn @click="toWeb()" rounded color="#ebff29" ripple>Visitar web</v-btn>
+        </div>
     </v-dialog>
 </template>
 
@@ -51,7 +54,11 @@ export default {
             "complete" == o.readyState ? s() : n[c]("load", s, 0), e.reset = s
         });
     },
-    methods: {}
+    methods: {
+        toWeb(){
+            window.open(this.work.btn, '_blank');
+        }
+    }
 }
 </script>
 
@@ -82,6 +89,17 @@ export default {
         .img-responsive{
             width: auto;
             margin: auto;
+        }
+    }
+
+    &__btn{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+
+        .v-btn{
+            font-family: SprintSansMedium;
+            min-width: 250px;
         }
     }
 }

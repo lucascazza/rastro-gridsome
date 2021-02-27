@@ -234,9 +234,13 @@
     }
 
     &--text{
-      padding-left: 30px;
       width: 100%;
       text-align: left;
+
+      .web__subtitle,
+        .web__text.strong{
+          text-align: center;
+        }
 
       .web__subtitle{
         color: #232323;
@@ -266,6 +270,7 @@
       }
 
       &--text{
+        padding-left: 30px;
         .web__text{
   
           &.strong{
