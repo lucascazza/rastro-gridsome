@@ -103,7 +103,7 @@ export default {
           label: 'Campañas publicitarias'
         },
         {
-          name: 'appjuegos',
+          name: 'appsjuegos',
           label: 'Apps y juegos'
         },
         {
@@ -337,7 +337,20 @@ export default {
           name: 'campañas'
         },
         {
-          name: 'appjuegos'
+          name: 'appsjuegos',
+          works: [
+            {
+              name: 'duracell',
+              type: 'link',
+              lazyImg: '../img/portfolio/appsjuegos/lazy/duracell-l.jpg',
+              thumbnail: '../img/portfolio/appsjuegos/thumbnails/duracell-t.jpg',
+              imgFull: '../img/portfolio/appsjuegos/duracell.jpg',
+              imgFullVert: '../img/portfolio/appsjuegos/duracellvert.jpg',
+              link: 'https://drive.google.com/file/d/1-V8ie9_s2eUj5NdHIinnAoJY8n_yQBW3/view?usp=sharing',
+              title: 'Juego Duracell',
+              description: 'Un juego de carrera en el que deberás ir agarrando pilas duracell para sumar energía, esquivando los obstaculos y las pilas comunes'
+            },
+          ]
         },
         {
           name: 'web',
