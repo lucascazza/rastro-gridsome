@@ -204,7 +204,7 @@ export default {
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/lollapalooza-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/lollapalooza-t.jpg',
-              imgFull: '../img/portfolio/grafico/lollapalooza.jpg'
+              imgFull: '../img/portfolio/grafico/lollapaloozamock.jpg'
             },
             {
               name: 'callia',
@@ -214,11 +214,25 @@ export default {
               imgFull: '../img/portfolio/grafico/callia.jpg'
             },
             {
+              name: 'calliamockup',
+              type: 'image',
+              lazyImg: '../img/portfolio/grafico/lazy/calliamockup-l.jpg',
+              thumbnail: '../img/portfolio/grafico/thumbnails/calliamockup-t.jpg',
+              imgFull: '../img/portfolio/grafico/calliamockup.jpg'
+            },
+            {
               name: 'logofolio',
               type: 'image',
               lazyImg: '../img/portfolio/grafico/lazy/logofolio-l.jpg',
               thumbnail: '../img/portfolio/grafico/thumbnails/logofolio-t.jpg',
               imgFull: '../img/portfolio/grafico/logofolio.jpg'
+            },
+            {
+              name: 'nnvm',
+              type: 'image',
+              lazyImg: '../img/portfolio/grafico/lazy/nnvm-l.jpg',
+              thumbnail: '../img/portfolio/grafico/thumbnails/nnvm-t.jpg',
+              imgFull: '../img/portfolio/grafico/nnvm.jpg'
             },
             {
               name: 'pauline',
@@ -326,7 +340,48 @@ export default {
           name: 'appjuegos'
         },
         {
-          name: 'web'
+          name: 'web',
+          works: [
+            {
+              name: 'agrodreams',
+              type: 'image',
+              lazyImg: '../img/portfolio/web/lazy/agrodreams-l.jpg',
+              thumbnail: '../img/portfolio/web/thumbnails/agrodreams-t.jpg',
+              imgFull: '../img/portfolio/web/agrodreams.jpg',
+              btn: 'https://agrodreams.com/'
+            },
+            {
+              name: 'landing',
+              type: 'image',
+              lazyImg: '../img/portfolio/web/lazy/landing-l.jpg',
+              thumbnail: '../img/portfolio/web/thumbnails/landing-t.jpg',
+              imgFull: '../img/portfolio/web/landing.jpg'
+            },
+            {
+              name: 'subastas',
+              type: 'image',
+              lazyImg: '../img/portfolio/web/lazy/subastas-l.jpg',
+              thumbnail: '../img/portfolio/web/thumbnails/subastas-t.jpg',
+              imgFull: '../img/portfolio/web/subastas.jpg',
+              btn: 'https://subastas.bancociudad.com.ar/'
+            },
+            {
+              name: 'aqualine',
+              type: 'image',
+              lazyImg: '../img/portfolio/web/lazy/aqualine-l.jpg',
+              thumbnail: '../img/portfolio/web/thumbnails/aqualine-t.jpg',
+              imgFull: '../img/portfolio/web/aqualine.jpg',
+              btn: 'http://www.aqualine.com.ar/'
+            },
+            {
+              name: 'braunybraun',
+              type: 'image',
+              lazyImg: '../img/portfolio/web/lazy/braunybraun-l.jpg',
+              thumbnail: '../img/portfolio/web/thumbnails/braunybraun-t.jpg',
+              imgFull: '../img/portfolio/web/braunybraun.jpg',
+              btn: 'http://www.braunybraun.com/es/'
+            }
+          ] 
         }
       ]
     };
