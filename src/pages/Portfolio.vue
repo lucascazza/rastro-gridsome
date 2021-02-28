@@ -116,43 +116,47 @@ export default {
           name: '3d',
           works: [
             {
-              name: 'lollapalooza',
+              name: 'groot',
               type: 'video',
-              lazyImg: '../img/portfolio/grafico/lazy/lollapalooza-l.jpg',
-              thumbnail: '../img/portfolio/grafico/thumbnails/lollapalooza-t.jpg',
-              link: 'https://www.youtube.com/embed/UeN0Peiz9w4'
+              lazyImg: '../img/portfolio/modelados/lazy/groot-l.jpg',
+              thumbnail: '../img/portfolio/modelados/thumbnails/groot-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
             },
             {
-              name: 'callia',
+              name: 'calle',
               type: 'image',
-              lazyImg: '../img/portfolio/grafico/lazy/callia-l.jpg',
-              thumbnail: '../img/portfolio/grafico/thumbnails/callia-t.jpg',
-              imgFull: '../img/portfolio/grafico/callia.jpg'
+              lazyImg: '../img/portfolio/modelados/lazy/calle-l.jpg',
+              thumbnail: '../img/portfolio/modelados/thumbnails/calle-t.jpg',
+              imgFull: '../img/portfolio/modelados/calle.jpg'
             },
             {
-              name: 'logofolio',
-              type: 'link',
-              lazyImg: '../img/portfolio/grafico/lazy/logofolio-l.jpg',
-              thumbnail: '../img/portfolio/grafico/thumbnails/logofolio-t.jpg',
-              imgFull: '../img/portfolio/grafico/logofolio.jpg',
-              link: 'https://drive.google.com/file/d/1-V8ie9_s2eUj5NdHIinnAoJY8n_yQBW3/view?usp=sharing',
-              title: 'Juego Duracell',
-              description: 'Un juego de carrera en el que deberás ir agarrando pilas duracell para más energía, esquivando los obstaculos y las pilas comunes'
-            },
-            {
-              name: 'pauline',
+              name: 'finn',
               type: 'image',
-              lazyImg: '../img/portfolio/grafico/lazy/pauline-l.jpg',
-              thumbnail: '../img/portfolio/grafico/thumbnails/pauline-t.jpg',
-              imgFull: '../img/portfolio/grafico/pauline.jpg'
+              lazyImg: '../img/portfolio/modelados/lazy/finn-l.jpg',
+              thumbnail: '../img/portfolio/modelados/thumbnails/finn-t.jpg',
+              imgFull: '../img/portfolio/modelados/finn.jpg'
             },
             {
-              name: 'temporada',
-              type: 'image',
-              lazyImg: '../img/portfolio/grafico/lazy/temporada-l.jpg',
-              thumbnail: '../img/portfolio/grafico/thumbnails/temporada-t.jpg',
-              imgFull: '../img/portfolio/grafico/temporadajuegos.jpg'
-            }
+              name: 'dron',
+              type: 'video',
+              lazyImg: '../img/portfolio/modelados/lazy/dron-l.jpg',
+              thumbnail: '../img/portfolio/modelados/thumbnails/dron-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+            {
+              name: 'gopro',
+              type: 'video',
+              lazyImg: '../img/portfolio/modelados/lazy/gopro-l.jpg',
+              thumbnail: '../img/portfolio/modelados/thumbnails/gopro-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+            {
+              name: 'cereales',
+              type: 'video',
+              lazyImg: '../img/portfolio/modelados/lazy/cereales-l.jpg',
+              thumbnail: '../img/portfolio/modelados/thumbnails/cereales-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
           ]
         },
         {
@@ -291,7 +295,44 @@ export default {
           ]          
         },
         {
-          name: 'vfx'
+          name: 'vfx',
+          works: [
+            {
+              name: 'barco',
+              type: 'video',
+              lazyImg: '../img/portfolio/vfx/lazy/barco-l.jpg',
+              thumbnail: '../img/portfolio/vfx/thumbnails/barco-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+            {
+              name: 'milton',
+              type: 'video',
+              lazyImg: '../img/portfolio/vfx/lazy/milton-l.jpg',
+              thumbnail: '../img/portfolio/vfx/thumbnails/milton-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+            {
+              name: 'paladin',
+              type: 'video',
+              lazyImg: '../img/portfolio/vfx/lazy/paladin-l.jpg',
+              thumbnail: '../img/portfolio/vfx/thumbnails/paladin-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+            {
+              name: 'taza',
+              type: 'video',
+              lazyImg: '../img/portfolio/vfx/lazy/taza-l.jpg',
+              thumbnail: '../img/portfolio/vfx/thumbnails/taza-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+            {
+              name: 'trip',
+              type: 'video',
+              lazyImg: '../img/portfolio/vfx/lazy/trip-l.jpg',
+              thumbnail: '../img/portfolio/vfx/thumbnails/trip-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+          ] 
         },
         {
           name: 'motion',
@@ -301,35 +342,35 @@ export default {
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/galeno-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/galeno-t.jpg',
-              link: 'https://www.youtube.com/embed/UeN0Peiz9w4'
+              link: '../media/fotomontaje-home.mp4'
             },
             {
               name: 'jardin',
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/jardin-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/jardin-t.jpg',
-              link: 'https://www.youtube.com/embed/UeN0Peiz9w4'
+              link: '../media/fotomontaje-home.mp4'
             },
             {
               name: 'mapping',
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/mapping-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/mapping-t.jpg',
-              link: 'https://www.youtube.com/embed/UeN0Peiz9w4'
+              link: '../media/fotomontaje-home.mp4'
             },
             {
               name: 'nnv',
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/nnv-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/nnv-t.jpg',
-              link: 'https://www.youtube.com/embed/UeN0Peiz9w4'
+              link: '../media/fotomontaje-home.mp4'
             },
             {
               name: 'shiafu',
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/shiafu-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/shiafu-t.jpg',
-              link: 'https://www.youtube.com/embed/UeN0Peiz9w4'
+              link: '../media/fotomontaje-home.mp4'
             }
           ]
         },
@@ -340,15 +381,27 @@ export default {
           name: 'appsjuegos',
           works: [
             {
+              name: 'agrodreams',
+              type: 'link',
+              lazyImg: '../img/portfolio/appsjuegos/lazy/agrodreams-l.jpg',
+              thumbnail: '../img/portfolio/appsjuegos/thumbnails/agrodreams-t.jpg',
+              imgFull: '../img/portfolio/appsjuegos/agrodreams.jpg',
+              imgFullVert: '../img/portfolio/appsjuegos/agrodreamsvert.jpg',
+              link: 'https://app.agrodreams.com/',
+              title: 'Agrodreams app',
+              description: 'Agrodreams es un software multiplataforma de agricultura de precisión que permite observar e identificar la variabilidad espacial del cultivo, detectar en forma preventiva el estado de vigorosidad de las plantas, mapear zonas y ambientes en el campo, diseñar planes de monitoreo dirigido, realizar tratamientos mediante aplicaciones variables y focalizadas de agroinsumos, para mejorar y hacer más inteligente el cuidado y la protección de los cultivos.'
+            },
+            {
               name: 'duracell',
               type: 'link',
               lazyImg: '../img/portfolio/appsjuegos/lazy/duracell-l.jpg',
               thumbnail: '../img/portfolio/appsjuegos/thumbnails/duracell-t.jpg',
               imgFull: '../img/portfolio/appsjuegos/duracell.jpg',
               imgFullVert: '../img/portfolio/appsjuegos/duracellvert.jpg',
+              dificultad: 4.5,
               link: 'https://drive.google.com/file/d/1-V8ie9_s2eUj5NdHIinnAoJY8n_yQBW3/view?usp=sharing',
-              title: 'Duracell El Juego ',
-              description: 'Un juego de carrera en el que deberás agarrar pilas duracell para sumar energía, mientras esquivas los obstaculos y las pilas comunes'
+              title: 'Duracell El Juego',
+              description: 'Un juego de carrera en el que deberás agarrar pilas duracell para sumar energía, mientras esquivas los obstaculos y las pilas comunes.'
             },
             {
               name: 'yogurisimo',
@@ -357,9 +410,21 @@ export default {
               thumbnail: '../img/portfolio/appsjuegos/thumbnails/yogurisimo-t.jpg',
               imgFull: '../img/portfolio/appsjuegos/yogurisimo.jpg',
               imgFullVert: '../img/portfolio/appsjuegos/yogurisimovert.jpg',
+              dificultad: 3.5,
               link: 'https://drive.google.com/file/d/1QXyGDgjSmpRjbYUqnIgi65rRlULbUrl0/view?usp=sharing',
-              title: 'Yogurisimo Rusia 2018 ',
-              description: 'Un juego de persecución'
+              title: 'Yogurisimo Rusia 2018',
+              description: 'Un juego de persecución. Tendrás que recolectar los cereales y Yogurisimos para sumar puntos. ¡Pero cuidado! que Pachorra no te atrape.'
+            },
+            {
+              name: 'agendapp',
+              type: 'link',
+              lazyImg: '../img/portfolio/appsjuegos/lazy/agendapp-l.jpg',
+              thumbnail: '../img/portfolio/appsjuegos/thumbnails/agendapp-t.jpg',
+              imgFull: '../img/portfolio/appsjuegos/agendapp.jpg',
+              imgFullVert: '../img/portfolio/appsjuegos/agendappvert.jpg',
+              link: 'https://drive.google.com/file/d/1yGzYj1RivjoiuDvSzxLfw4zT5wpVP7Ty/view?usp=sharing',
+              title: 'Agendapp',
+              description: 'Una aplicación muy útil con una interfaz intuitiva con la que podrás crear notas y recordatorios por categorías personalizadas.'
             },
           ]
         },

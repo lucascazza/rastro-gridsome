@@ -5,16 +5,16 @@
                 <v-progress-linear color="deep-purple" height="10" indeterminate></v-progress-linear>
             </template>
 
-            <v-img height="250" :src="work.imgFull"></v-img>
+            <v-img style="maxHeight:300px" :src="work.imgFull"></v-img>
 
             <v-card-title>{{work.title}}</v-card-title>
 
             <v-card-text>
-                <v-row align="center" class="mx-0 dialog-link__row">
+                <v-row align="center" class="mx-0 dialog-link__row" v-if="work.dificultad">
                     <div class="grey--text ml-4">
-                        Dificultad: 3.5
+                        Dificultad: {{work.dificultad}}
                     </div>
-                    <v-rating :value="3.5" color="#EE9900" dense half-increments readonly size="16"></v-rating>
+                    <v-rating :value="work.dificultad" color="#EE9900" dense half-increments readonly size="16"></v-rating>
                 </v-row>
 
                 <div>{{work.description}}</div>
@@ -29,20 +29,23 @@
         </v-card>
 
         <v-card dark v-else class="dialog-link__horizontal">
-            <div class="d-flex align-center dialog-link__horizontal--content">
-                <div>
-                    <v-card-title class="headline" v-text="work.title"></v-card-title>
+            <div class="d-flex dialog-link__horizontal--content">
+                <div class="content-flex">
+                    <div>
+                        <v-card-title class="headline" v-text="work.title"></v-card-title>
 
-                    <v-card-text>
-                        <v-row align="center" class="mx-0 dialog-link__row">
-                            <div class="grey--text ml-4">
-                                Dificultad: 3.5
-                            </div>
-                            <v-rating :value="3.5" color="#EE9900" dense half-increments readonly size="16"></v-rating>
-                        </v-row>
+                        <v-card-text>
+                            <v-row align="center" class="mx-0 dialog-link__row" v-if="work.dificultad">
+                                <div class="grey--text ml-4">
+                                    Dificultad: {{work.dificultad}}
+                                </div>
+                                <v-rating :value="work.dificultad" color="#EE9900" dense half-increments readonly
+                                    size="16"></v-rating>
+                            </v-row>
 
-                        <div>{{work.description}}</div>
-                    </v-card-text>
+                            <div>{{work.description}}</div>
+                        </v-card-text>
+                    </div>
                     <v-card-actions>
                         <v-btn color="#ebff29" text :href="work.link" target="_blank" class="ml-2 mt-5" outlined rounded
                             large>
@@ -150,6 +153,12 @@ export default {
 
         &--content{
             justify-content: space-between;
+
+            .content-flex{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
         }
         
         &--img{
@@ -159,8 +168,12 @@ export default {
         .v-card__title,
         .v-card__text,
         .v-card__actions{
-            padding-left: 1rem;
+            padding-left: 1.5rem;
             padding-right: 1.5rem;
+        }
+
+        .v-card__actions{
+            padding-bottom: 1rem;
         }
 
     }
