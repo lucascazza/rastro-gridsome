@@ -298,6 +298,20 @@ export default {
           name: 'vfx',
           works: [
             {
+              name: 'taza',
+              type: 'video',
+              lazyImg: '../img/portfolio/vfx/lazy/taza-l.jpg',
+              thumbnail: '../img/portfolio/vfx/thumbnails/taza-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+            {
+              name: 'trip',
+              type: 'video',
+              lazyImg: '../img/portfolio/vfx/lazy/trip-l.jpg',
+              thumbnail: '../img/portfolio/vfx/thumbnails/trip-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+            {
               name: 'barco',
               type: 'video',
               lazyImg: '../img/portfolio/vfx/lazy/barco-l.jpg',
@@ -317,21 +331,7 @@ export default {
               lazyImg: '../img/portfolio/vfx/lazy/paladin-l.jpg',
               thumbnail: '../img/portfolio/vfx/thumbnails/paladin-t.jpg',
               link: '../media/fotomontaje-home.mp4'
-            },
-            {
-              name: 'taza',
-              type: 'video',
-              lazyImg: '../img/portfolio/vfx/lazy/taza-l.jpg',
-              thumbnail: '../img/portfolio/vfx/thumbnails/taza-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
-            },
-            {
-              name: 'trip',
-              type: 'video',
-              lazyImg: '../img/portfolio/vfx/lazy/trip-l.jpg',
-              thumbnail: '../img/portfolio/vfx/thumbnails/trip-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
-            },
+            }
           ] 
         },
         {
