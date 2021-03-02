@@ -375,7 +375,93 @@ export default {
           ]
         },
         {
-          name: 'campañas'
+          name: 'campañas',
+          works: [
+            {
+              name: 'egotest',
+              type: 'video',
+              lazyImg: '../img/portfolio/campanias/lazy/egotest-l.jpg',
+              thumbnail: '../img/portfolio/campanias/thumbnails/egotest-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+            {
+              name: 'board',
+              type: 'image',
+              lazyImg: '../img/portfolio/campanias/lazy/board-l.jpg',
+              thumbnail: '../img/portfolio/campanias/thumbnails/board-t.jpg',
+              imgFull: '../img/portfolio/campanias/board.jpg'
+            },
+            {
+              name: 'colectivo',
+              type: 'image',
+              lazyImg: '../img/portfolio/campanias/lazy/colectivo-l.jpg',
+              thumbnail: '../img/portfolio/campanias/thumbnails/colectivo-t.jpg',
+              imgFull: '../img/portfolio/campanias/colectivo.jpg'
+            },
+            {
+              name: 'comic',
+              type: 'image',
+              lazyImg: '../img/portfolio/campanias/lazy/comic-l.jpg',
+              thumbnail: '../img/portfolio/campanias/thumbnails/comic-t.jpg',
+              imgFull: '../img/portfolio/campanias/comic.jpg'
+            },
+            {
+              name: 'edificio',
+              type: 'image',
+              lazyImg: '../img/portfolio/campanias/lazy/edificio-l.jpg',
+              thumbnail: '../img/portfolio/campanias/thumbnails/edificio-t.jpg',
+              imgFull: '../img/portfolio/campanias/edificio.jpg'
+            },
+            {
+              name: 'hermanos',
+              type: 'video',
+              lazyImg: '../img/portfolio/campanias/lazy/hermanos-l.jpg',
+              thumbnail: '../img/portfolio/campanias/thumbnails/hermanos-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+            {
+              name: 'novios',
+              type: 'video',
+              lazyImg: '../img/portfolio/campanias/lazy/novios-l.jpg',
+              thumbnail: '../img/portfolio/campanias/thumbnails/novios-t.jpg',
+              link: '../media/fotomontaje-home.mp4'
+            },
+            {
+              name: 'ole',
+              type: 'image',
+              lazyImg: '../img/portfolio/campanias/lazy/ole-l.jpg',
+              thumbnail: '../img/portfolio/campanias/thumbnails/ole-t.jpg',
+              imgFull: '../img/portfolio/campanias/ole.jpg'
+            },
+            {
+              name: 'parada',
+              type: 'image',
+              lazyImg: '../img/portfolio/campanias/lazy/parada-l.jpg',
+              thumbnail: '../img/portfolio/campanias/thumbnails/parada-t.jpg',
+              imgFull: '../img/portfolio/campanias/parada.jpg'
+            },
+            {
+              name: 'subte',
+              type: 'image',
+              lazyImg: '../img/portfolio/campanias/lazy/subte-l.jpg',
+              thumbnail: '../img/portfolio/campanias/thumbnails/subte-t.jpg',
+              imgFull: '../img/portfolio/campanias/subte.jpg'
+            },
+            {
+              name: 'tinder',
+              type: 'image',
+              lazyImg: '../img/portfolio/campanias/lazy/tinder-l.jpg',
+              thumbnail: '../img/portfolio/campanias/thumbnails/tinder-t.jpg',
+              imgFull: '../img/portfolio/campanias/tinder.jpg'
+            }
+            // {
+            //   name: 'mari',
+            //   type: 'video',
+            //   lazyImg: '../img/portfolio/fotomontajes/lazy/mari-l.jpg',
+            //   thumbnail: '../img/portfolio/fotomontajes/thumbnails/mari-t.jpg',
+            //   link: '../media/fotomontaje-home.mp4'
+            // },
+          ]
         },
         {
           name: 'appsjuegos',
