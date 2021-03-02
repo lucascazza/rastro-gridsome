@@ -41,20 +41,20 @@
                     Modelados 3d</li>
                   <li class="options-list__item" :class="{'active' : stepTrabajos == 2}" @click="stepTrabajos = 2">
                                       
-                    <i class="icon-3d svg-1"></i>
-                    <i class="icon-3d svg-2"></i>
+                    <i class="icon-vfx svg-1"></i>
+                    <i class="icon-vfx svg-2"></i>
 
                     VFX</li>
                   <li class="options-list__item" :class="{'active' : stepTrabajos == 3}" @click="stepTrabajos = 3">
                     
-                    <i class="icon-3d svg-1"></i>
-                    <i class="icon-3d svg-2"></i>
+                    <i class="icon-fotomontajes svg-1"></i>
+                    <i class="icon-fotomontajes svg-2"></i>
                     
                     Fotomontajes</li>
                   <li class="options-list__item" :class="{'active' : stepTrabajos == 4}" @click="stepTrabajos = 4">
                     
-                    <i class="icon-3d svg-1"></i>
-                    <i class="icon-3d svg-2"></i>
+                    <i class="icon-ilustraciones svg-1"></i>
+                    <i class="icon-ilustraciones svg-2"></i>
                     
                     Ilustraciones</li>
                 </ul>
@@ -83,17 +83,17 @@
                 </div>
                 <div class="item-col">
                   <div class="item-col__item" :class="{'active' : stepTrabajos == 2}" @click="stepTrabajos = 2">
-                    <i class="icon-3d"></i>
+                    <i class="icon-vfx"></i>
                   </div>
                 </div>
                 <div class="item-col">
                   <div class="item-col__item" :class="{'active' : stepTrabajos == 3}" @click="stepTrabajos = 3">
-                    <i class="icon-3d"></i>
+                    <i class="icon-fotomontajes"></i>
                   </div>
                 </div>
                 <div class="item-col">
                   <div class="item-col__item" :class="{'active' : stepTrabajos == 4}" @click="stepTrabajos = 4">
-                    <i class="icon-3d"></i>
+                    <i class="icon-ilustraciones"></i>
                   </div>
                 </div>
               </div>

@@ -393,10 +393,10 @@ export default {
             },
             {
               name: 'colectivo',
-              type: 'image',
+              type: 'video',
               lazyImg: '../img/portfolio/campanias/lazy/colectivo-l.jpg',
               thumbnail: '../img/portfolio/campanias/thumbnails/colectivo-t.jpg',
-              imgFull: '../img/portfolio/campanias/colectivo.jpg'
+              link: '../img/portfolio/campanias/colectivo.mp4'
             },
             {
               name: 'comic',
@@ -407,10 +407,10 @@ export default {
             },
             {
               name: 'edificio',
-              type: 'image',
+              type: 'video',
               lazyImg: '../img/portfolio/campanias/lazy/edificio-l.jpg',
               thumbnail: '../img/portfolio/campanias/thumbnails/edificio-t.jpg',
-              imgFull: '../img/portfolio/campanias/edificio.jpg'
+              link: '../img/portfolio/campanias/edificio.mp4'
             },
             {
               name: 'hermanos',

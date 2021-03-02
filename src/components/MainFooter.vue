@@ -5,19 +5,19 @@
           <p>Copyright © 2021 Rastro</p>
           <g-image class="img-responsive" src="~/assets/web/img/logo-bn.svg" alt="Logo" />                
           <div class="main-footer__content--redes">
-            <a href="">
+            <a href="https://www.instagram.com/somos.rastro/" target="_blank">
               <i class="icon-instagram"></i>
             </a>
-            <a href="">
+            <a href="https://www.youtube.com/channel/UC67FEpvP-BuiisN_OtAvmDg" target="_blank">
               <i class="icon-youtube"></i>
             </a>
-            <a href="">
+            <a href="https://vimeo.com/user133450978" target="_blank">
               <i class="icon-vimeo"></i>
             </a>
-            <a href="">
+            <a href="https://www.behance.net/somosrastro" target="_blank">
               <i class="icon-behance"></i>
             </a>
-            <a href="">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rastro.multimedial@gmail.com" target="_blank">
               <i class="icon-email"></i>
             </a>
           </div>
