@@ -49,7 +49,7 @@
                     <v-card-actions>
                         <v-btn color="#ebff29" text :href="work.link" target="_blank" class="ml-2 mt-5" outlined rounded
                             large>
-                            Descargar
+                            {{work.action}}
                         </v-btn>
                     </v-card-actions>
                 </div>

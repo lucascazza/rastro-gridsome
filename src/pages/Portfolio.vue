@@ -382,7 +382,7 @@ export default {
               type: 'video',
               lazyImg: '../img/portfolio/campanias/lazy/egotest-l.jpg',
               thumbnail: '../img/portfolio/campanias/thumbnails/egotest-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://www.youtube.com/embed/g3w__2AWOGA'
             },
             {
               name: 'board',
@@ -454,13 +454,6 @@ export default {
               thumbnail: '../img/portfolio/campanias/thumbnails/tinder-t.jpg',
               imgFull: '../img/portfolio/campanias/tinder.jpg'
             }
-            // {
-            //   name: 'mari',
-            //   type: 'video',
-            //   lazyImg: '../img/portfolio/fotomontajes/lazy/mari-l.jpg',
-            //   thumbnail: '../img/portfolio/fotomontajes/thumbnails/mari-t.jpg',
-            //   link: '../media/fotomontaje-home.mp4'
-            // },
           ]
         },
         {
@@ -475,6 +468,7 @@ export default {
               imgFullVert: '../img/portfolio/appsjuegos/agrodreamsvert.jpg',
               link: 'https://app.agrodreams.com/',
               title: 'Agrodreams app',
+              action: 'Ver app',
               description: 'Agrodreams es un software multiplataforma de agricultura de precisión que permite observar e identificar la variabilidad espacial del cultivo, detectar en forma preventiva el estado de vigorosidad de las plantas, mapear zonas y ambientes en el campo, diseñar planes de monitoreo dirigido, realizar tratamientos mediante aplicaciones variables y focalizadas de agroinsumos, para mejorar y hacer más inteligente el cuidado y la protección de los cultivos.'
             },
             {
@@ -485,8 +479,9 @@ export default {
               imgFull: '../img/portfolio/appsjuegos/duracell.jpg',
               imgFullVert: '../img/portfolio/appsjuegos/duracellvert.jpg',
               dificultad: 4.5,
-              link: 'https://drive.google.com/file/d/1-V8ie9_s2eUj5NdHIinnAoJY8n_yQBW3/view?usp=sharing',
+              link: 'http://duracell.somosrastro.com',
               title: 'Duracell El Juego',
+              action: 'Jugar',
               description: 'Un juego de carrera en el que deberás agarrar pilas duracell para sumar energía, mientras esquivas los obstaculos y las pilas comunes.'
             },
             {
@@ -497,8 +492,9 @@ export default {
               imgFull: '../img/portfolio/appsjuegos/yogurisimo.jpg',
               imgFullVert: '../img/portfolio/appsjuegos/yogurisimovert.jpg',
               dificultad: 3.5,
-              link: 'https://drive.google.com/file/d/1QXyGDgjSmpRjbYUqnIgi65rRlULbUrl0/view?usp=sharing',
+              link: 'http://yogurisimo.somosrastro.com',
               title: 'Yogurisimo Rusia 2018',
+              action: 'Jugar',
               description: 'Un juego de persecución. Tendrás que recolectar los cereales y Yogurisimos para sumar puntos. ¡Pero cuidado! que Pachorra no te atrape.'
             },
             {
@@ -510,6 +506,7 @@ export default {
               imgFullVert: '../img/portfolio/appsjuegos/agendappvert.jpg',
               link: 'https://drive.google.com/file/d/1yGzYj1RivjoiuDvSzxLfw4zT5wpVP7Ty/view?usp=sharing',
               title: 'Agendapp',
+              action: 'Descargar',
               description: 'Una aplicación muy útil con una interfaz intuitiva con la que podrás crear notas y recordatorios por categorías personalizadas.'
             },
           ]
