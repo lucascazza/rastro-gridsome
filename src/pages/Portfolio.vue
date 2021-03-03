@@ -120,7 +120,7 @@ export default {
               type: 'video',
               lazyImg: '../img/portfolio/modelados/lazy/groot-l.jpg',
               thumbnail: '../img/portfolio/modelados/thumbnails/groot-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://player.vimeo.com/video/518749845'
             },
             {
               name: 'calle',
@@ -141,21 +141,21 @@ export default {
               type: 'video',
               lazyImg: '../img/portfolio/modelados/lazy/dron-l.jpg',
               thumbnail: '../img/portfolio/modelados/thumbnails/dron-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://player.vimeo.com/video/511360630'
             },
             {
               name: 'gopro',
               type: 'video',
               lazyImg: '../img/portfolio/modelados/lazy/gopro-l.jpg',
               thumbnail: '../img/portfolio/modelados/thumbnails/gopro-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://www.youtube.com/embed/oTK8p0hfoXc'
             },
             {
               name: 'cereales',
               type: 'video',
               lazyImg: '../img/portfolio/modelados/lazy/cereales-l.jpg',
               thumbnail: '../img/portfolio/modelados/thumbnails/cereales-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://player.vimeo.com/video/518750227'
             },
           ]
         },
@@ -302,35 +302,35 @@ export default {
               type: 'video',
               lazyImg: '../img/portfolio/vfx/lazy/taza-l.jpg',
               thumbnail: '../img/portfolio/vfx/thumbnails/taza-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://www.youtube.com/embed/x3WxYyHZmb8'
             },
             {
               name: 'trip',
               type: 'video',
               lazyImg: '../img/portfolio/vfx/lazy/trip-l.jpg',
               thumbnail: '../img/portfolio/vfx/thumbnails/trip-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://www.youtube.com/embed/ZQI3khZvEKs'
             },
             {
               name: 'barco',
               type: 'video',
               lazyImg: '../img/portfolio/vfx/lazy/barco-l.jpg',
               thumbnail: '../img/portfolio/vfx/thumbnails/barco-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://www.youtube.com/embed/tiWdCWDvDlI'
             },
             {
               name: 'milton',
               type: 'video',
               lazyImg: '../img/portfolio/vfx/lazy/milton-l.jpg',
               thumbnail: '../img/portfolio/vfx/thumbnails/milton-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://player.vimeo.com/video/518751767'
             },
             {
               name: 'paladin',
               type: 'video',
               lazyImg: '../img/portfolio/vfx/lazy/paladin-l.jpg',
               thumbnail: '../img/portfolio/vfx/thumbnails/paladin-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://player.vimeo.com/video/511414641'
             }
           ] 
         },
@@ -342,35 +342,35 @@ export default {
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/galeno-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/galeno-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://player.vimeo.com/video/518747763'
             },
             {
               name: 'jardin',
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/jardin-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/jardin-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://player.vimeo.com/video/511445387'
             },
             {
               name: 'mapping',
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/mapping-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/mapping-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://player.vimeo.com/video/518747066'
             },
             {
               name: 'nnv',
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/nnv-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/nnv-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://player.vimeo.com/video/518746392'
             },
             {
               name: 'shiafu',
               type: 'video',
               lazyImg: '../img/portfolio/motion/lazy/shiafu-l.jpg',
               thumbnail: '../img/portfolio/motion/thumbnails/shiafu-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://player.vimeo.com/video/518745918'
             }
           ]
         },
@@ -417,14 +417,14 @@ export default {
               type: 'video',
               lazyImg: '../img/portfolio/campanias/lazy/hermanos-l.jpg',
               thumbnail: '../img/portfolio/campanias/thumbnails/hermanos-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://player.vimeo.com/video/518741830'
             },
             {
               name: 'novios',
               type: 'video',
               lazyImg: '../img/portfolio/campanias/lazy/novios-l.jpg',
               thumbnail: '../img/portfolio/campanias/thumbnails/novios-t.jpg',
-              link: '../media/fotomontaje-home.mp4'
+              link: 'https://player.vimeo.com/video/518743125'
             },
             {
               name: 'ole',
@@ -560,6 +560,23 @@ export default {
         }
       ]
     };
+  },
+  watch: {
+    showDialogVideo(value){
+      if (!value){
+        this.workSelected = {}
+      }
+    },
+    showDialogImage(value){
+      if (!value){
+        this.workSelected = {}
+      }
+    },
+    showDialogLink(value){
+      if (!value){
+        this.workSelected = {}
+      }
+    }
   },
   methods: {
     openWork(work) {
