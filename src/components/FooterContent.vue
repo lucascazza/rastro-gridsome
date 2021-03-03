@@ -2,7 +2,7 @@
   <Container tag="section" class="content-footer">
     <div class="content-footer__content">
       <h2 class="web__subtitle">¿Perdiste algo? <br/> Tenemos lo que estas necesitando</h2>
-      <g-link class="web__button" to="/portfolio">Experiencia Rastro</g-link>
+      <g-link class="web__button" to="http://experienciarastro.com.ar/" target="_blank">Experiencia Rastro</g-link>
     </div>
   </Container>
 </template>

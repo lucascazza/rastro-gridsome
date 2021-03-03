@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'rastroicons';
-  src:  url('./rastroicons.eot?rcrm5y');
-  src:  url('./rastroicons.eot?rcrm5y#iefix') format('embedded-opentype'),
-    url('./rastroicons.ttf?rcrm5y') format('truetype'),
-    url('./rastroicons.woff?rcrm5y') format('woff'),
-    url('./rastroicons.svg?rcrm5y#rastroicons') format('svg');
+  src:  url('./rastroicons.eot?vcm8fc');
+  src:  url('./rastroicons.eot?vcm8fc#iefix') format('embedded-opentype'),
+    url('./rastroicons.ttf?vcm8fc') format('truetype'),
+    url('./rastroicons.woff?vcm8fc') format('woff'),
+    url('./rastroicons.svg?vcm8fc#rastroicons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-fotomontajes:before {
+  content: "\e914";
+}
+.icon-ilustraciones:before {
+  content: "\e915";
+}
+.icon-lobo:before {
+  content: "\e916";
+}
+.icon-punnix:before {
+  content: "\e917";
+}
+.icon-rastro:before {
+  content: "\e918";
+}
+.icon-toro:before {
+  content: "\e919";
+}
+.icon-vfx:before {
+  content: "\e91a";
+}
+.icon-ojo:before {
+  content: "\e912";
+}
+.icon-ojocerrado:before {
+  content: "\e913";
+}
+.icon-pause:before {
+  content: "\e90f";
+}
+.icon-play:before {
+  content: "\e910";
+}
+.icon-play-pause:before {
+  content: "\e911";
+}
 .icon-compare-arrows:before {
   content: "\e90e";
 }

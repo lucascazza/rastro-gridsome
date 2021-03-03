@@ -51,7 +51,7 @@
           <div class="about__row">
             <div class="about__card">
               <div class="about__card--img">
-                <g-image src="~/assets/web/img/about/circulo.svg" alt="Manu Messina" />
+                <g-image src="~/assets/web/img/about/fotos/manu.jpg" alt="Manu Messina" />
               </div>
               <div class="about__card--text">
                 <h2 class="web__subtitle">Manu Messina</h2>
@@ -90,7 +90,7 @@
           <div class="about__row">
             <div class="about__card">
               <div class="about__card--img">
-                <g-image src="~/assets/web/img/about/circulo.svg" alt="Alejo Mordini" />
+                <g-image src="~/assets/web/img/about/fotos/jejo.jpg" alt="Alejo Mordini" />
               </div>
               <div class="about__card--text">
                 <h2 class="web__subtitle">Jejo Mordini</h2>
