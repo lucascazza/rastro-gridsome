@@ -1,8 +1,15 @@
 <template>
   <Layout>
     <Container tag="div" fullScreen class="portfolio-header">
+    <Container tag="div">
+      <div class="portfolio-reel">
+        <video ref="video" poster="/media/postermanifiesto.jpg" controls frameborder="0">
+          <source src="/media/manifiesto.mp4" type="video/mp4">
+        </video>
+      </div>      
+    </Container>
       <Container tag="div" class="portfolio-header__options">
-        <v-tabs color="#ebff29" background-color="#232323" show-arrows class="color-arrows">
+        <v-tabs color="#ebff29" show-arrows class="color-arrows background-transparent">
           <v-tab v-for="tab in tabs" :key="tab.name">{{tab.label}}</v-tab>
 
           <v-tab-item v-for="item in tabsItems" :key="item.name" background-color="#232323">
@@ -99,8 +106,8 @@ export default {
           label: 'Motion graphics'
         },
         {
-          name: 'campañas',
-          label: 'Campañas publicitarias'
+          name: 'campania',
+          label: 'Campaña 360'
         },
         {
           name: 'appsjuegos',
@@ -155,7 +162,7 @@ export default {
               type: 'video',
               lazyImg: '../img/portfolio/modelados/lazy/cereales-l.jpg',
               thumbnail: '../img/portfolio/modelados/thumbnails/cereales-t.jpg',
-              link: 'https://player.vimeo.com/video/518750227'
+              link: 'https://player.vimeo.com/video/519260566'
             },
           ]
         },
@@ -316,7 +323,7 @@ export default {
               type: 'video',
               lazyImg: '../img/portfolio/vfx/lazy/barco-l.jpg',
               thumbnail: '../img/portfolio/vfx/thumbnails/barco-t.jpg',
-              link: 'https://www.youtube.com/embed/tiWdCWDvDlI'
+              link: 'https://www.youtube.com/embed/WBDk9nW8XiE'
             },
             {
               name: 'milton',
@@ -375,7 +382,7 @@ export default {
           ]
         },
         {
-          name: 'campañas',
+          name: 'campania',
           works: [
             {
               name: 'egotest',

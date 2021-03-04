@@ -1,5 +1,9 @@
 .portfolio-header {
   padding-top: 60px;
+  background-image: url(../assets/web/img/fondo-portfolio.svg);
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
 
   @media (min-width: 768px) {
     padding-top: 80px;
@@ -13,6 +17,11 @@
       @media (min-width: 992px) {
         font-size: .85rem !important;
       }
+    }
+
+    .theme--light.v-tabs>.v-tabs-bar {
+      background: transparent !important;
+      background-color: transparent !important;
     }
 
     .v-tabs.color-arrows {
@@ -62,6 +71,7 @@
 
     &--img {
       cursor: pointer;
+      border-radius: 4px !important;
     }
   }
 }
@@ -77,5 +87,21 @@
 
   @media (min-width: 768px) {
     background-image: url(../assets/web/img/fondo-footer.svg);
+  }
+}
+
+.portfolio-reel {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  @media (min-width: 992px) {
+    margin-bottom: 4rem;
+  }
+
+  video {
+    max-width: 100%;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .55);
   }
 }
