@@ -22,6 +22,7 @@
     .theme--light.v-tabs>.v-tabs-bar {
       background: transparent !important;
       background-color: transparent !important;
+      border-radius: 4px;
     }
 
     .v-tabs.color-arrows {
@@ -91,7 +92,7 @@
 }
 
 .portfolio-reel {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 3rem;
 
   @media (min-width: 992px) {
@@ -103,5 +104,22 @@
     outline: none;
     border-radius: 4px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .55);
+  }
+
+  .reel{
+    font-family: OswaldBold;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    @media (min-width: 576px){
+      font-size: 2rem;
+    }
+
+    @media (min-width: 768px){
+      font-size: 3rem;
+    }
   }
 }
