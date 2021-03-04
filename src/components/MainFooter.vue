@@ -1,22 +1,24 @@
 <template>
     <Container tag="footer" fullScreen class="main-footer">
-        <g-image class="img-responsive main-footer__logo" src="~/assets/web/img/footer/footer-background-verde.svg" alt="Footer logo" />
+        <g-image class="img-responsive main-footer__logo" src="~/assets/web/img/footer/footer-background.svg" alt="Footer logo" />
         <Container tag="div" class="main-footer__content">
           <p>Copyright © 2021 Rastro</p>
-          <g-image v-if="isMobile" class="img-responsive" src="~/assets/web/img/logo-only.svg" alt="Logo" />          
-          <g-image v-else class="img-responsive" src="~/assets/web/img/isologo.svg" alt="Logo" />          
+          <g-image class="img-responsive" src="~/assets/web/img/logo-bn.svg" alt="Logo" />                
           <div class="main-footer__content--redes">
-            <a href="">
+            <a href="https://www.instagram.com/somos.rastro/" target="_blank">
               <i class="icon-instagram"></i>
             </a>
-            <a href="">
+            <a href="https://www.youtube.com/channel/UC67FEpvP-BuiisN_OtAvmDg" target="_blank">
               <i class="icon-youtube"></i>
             </a>
-            <a href="">
+            <a href="https://vimeo.com/user133450978" target="_blank">
+              <i class="icon-vimeo"></i>
+            </a>
+            <a href="https://www.behance.net/somosrastro" target="_blank">
               <i class="icon-behance"></i>
             </a>
-            <a href="">
-              <i class="icon-google"></i>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rastro.multimedial@gmail.com" target="_blank">
+              <i class="icon-email"></i>
             </a>
           </div>
         </Container> 
@@ -60,7 +62,7 @@ export default {
 </script>
 <style lang="scss" scoped>
   .main-footer {
-    background: #314430;
+    background: #f6f6f6;
     position: relative;
     padding: 0;
 
@@ -84,6 +86,7 @@ export default {
 
       p {
         font-size: 1rem;
+        color: #232323;
       }
 
       .img-responsive{
@@ -116,7 +119,7 @@ export default {
           }
 
           i {
-            color: #fff;
+            color: #232323;
             font-size: 36px;
 
             @media (min-width: 768px){

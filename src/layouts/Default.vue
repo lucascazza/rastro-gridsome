@@ -1,12 +1,14 @@
 <template>
+<div data-app>
+  <Header />
   <main class="web__content">
-    <Header />
-    <slot />
-    <MainFooter></MainFooter>
+    <slot/>
   </main>
+  <MainFooter/>
+</div>
+  
 </template>
 <script>
-import '~/assets/web/scss/web.scss'
 import Header from '~/components/Header.vue'
 import MainFooter from '~/components/MainFooter.vue'
 export default {
@@ -21,4 +23,7 @@ export default {
 </script>
 
 <style>
+.web__content{
+  min-height: 100vh !important;
+}
 </style>

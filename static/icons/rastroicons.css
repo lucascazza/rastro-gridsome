@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'rastroicons';
-  src:  url('./rastroicons.eot?vn69h6');
-  src:  url('./rastroicons.eot?vn69h6#iefix') format('embedded-opentype'),
-    url('./rastroicons.ttf?vn69h6') format('truetype'),
-    url('./rastroicons.woff?vn69h6') format('woff'),
-    url('./rastroicons.svg?vn69h6#rastroicons') format('svg');
+  src:  url('./rastroicons.eot?vcm8fc');
+  src:  url('./rastroicons.eot?vcm8fc#iefix') format('embedded-opentype'),
+    url('./rastroicons.ttf?vcm8fc') format('truetype'),
+    url('./rastroicons.woff?vcm8fc') format('woff'),
+    url('./rastroicons.svg?vcm8fc#rastroicons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,18 +25,84 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-fotomontajes:before {
+  content: "\e914";
+}
+.icon-ilustraciones:before {
+  content: "\e915";
+}
+.icon-lobo:before {
+  content: "\e916";
+}
+.icon-punnix:before {
+  content: "\e917";
+}
+.icon-rastro:before {
+  content: "\e918";
+}
+.icon-toro:before {
+  content: "\e919";
+}
+.icon-vfx:before {
+  content: "\e91a";
+}
+.icon-ojo:before {
+  content: "\e912";
+}
+.icon-ojocerrado:before {
+  content: "\e913";
+}
+.icon-pause:before {
+  content: "\e90f";
+}
+.icon-play:before {
+  content: "\e910";
+}
+.icon-play-pause:before {
+  content: "\e911";
+}
+.icon-compare-arrows:before {
+  content: "\e90e";
+}
+.icon-arrow-down:before {
+  content: "\e905";
+}
+.icon-arrow-down_circle:before {
+  content: "\e906";
+}
+.icon-arrow-left:before {
+  content: "\e907";
+}
+.icon-arrow-left_circle:before {
+  content: "\e908";
+}
+.icon-arrow-right:before {
+  content: "\e909";
+}
+.icon-arrow-right_circle:before {
+  content: "\e90a";
+}
+.icon-arrow-up:before {
+  content: "\e90b";
+}
+.icon-arrow-up_circle:before {
+  content: "\e90c";
+}
+.icon-vimeo:before {
+  content: "\e90d";
+}
+.icon-email:before {
+  content: "\e902";
+}
+.icon-youtube:before {
+  content: "\e904";
+}
 .icon-3d:before {
   content: "\e900";
 }
 .icon-behance:before {
   content: "\e901";
 }
-.icon-google:before {
-  content: "\e902";
-}
 .icon-instagram:before {
   content: "\e903";
-}
-.icon-youtube:before {
-  content: "\e904";
 }

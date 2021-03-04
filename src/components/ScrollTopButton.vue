@@ -53,12 +53,12 @@ export default {
 }
 .btn {
     border-radius: 50px;
-    background-color: rgba(234, 255, 41, 0.2);
+    background-color: rgba(16, 254, 204, .3);
     padding: 10px;
     width: 40px;
     height: 40px;
 }
 .yellow{
-  fill: var(--yellow);
+  fill: var(--cyan);
 }
 </style>

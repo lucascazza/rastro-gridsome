@@ -14,7 +14,7 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'Rastro',
-  siteUrl: 'https://somosrastro.com',
+  siteUrl: 'http://somosrastro.com/',
   plugins: [],
   chainWebpack: config => {
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
