@@ -94,6 +94,9 @@
 .portfolio-reel {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: 992px) {
     margin-bottom: 4rem;
@@ -104,6 +107,10 @@
     outline: none;
     border-radius: 4px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .55);
+
+    @media (min-width: 1600px){
+      max-width: 80%;
+    }
   }
 
   .reel{

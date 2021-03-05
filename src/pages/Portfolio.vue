@@ -4,8 +4,8 @@
     <Container tag="div">
       <div class="portfolio-reel">
         <h2 class="reel">Mirá nuestro Reel</h2>
-        <video ref="video" poster="/media/postermanifiesto.jpg" controls frameborder="0">
-          <source src="/media/manifiesto.mp4" type="video/mp4">
+        <video ref="video" poster="/media/reelposter.jpg" controls frameborder="0">
+          <source src="/media/reel.mp4" type="video/mp4">
         </video>
       </div>      
     </Container>
