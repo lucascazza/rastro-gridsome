@@ -10,22 +10,25 @@
           </div>
         </div>
         <div class="about-banner__content--img">
-          <g-image class="img-responsive" src="~/assets/web/img/about/about-banner.svg" alt="Banner About" />
+          <g-image class="img-responsive" src="~/assets/web/img/about/banner-about.png" alt="Banner About" />
         </div>
       </div>
     </Container>
-    <Container tag="section" class="about-filosofia">
-      <div class="about-filosofia__img">
-        <g-image class="img-responsive" src="~/assets/web/img/about/about-img.svg" alt="Image About" />
-      </div>
-      <div class="about-filosofia__text">
-        <h2 class="web__subtitle">Nuestra filosofía</h2>
-        <p class="web__text">Impulsamos el movimiento, y el aprendizaje. No nos limitamos, avanzamos con determinación.
-          Creemos que el aprendizaje surge cuando no existe miedo a experimentar.
-          Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. Es animarse a más, moverse,
-          transformarse. Ir hacia lo desconocido.</p>
-        <p class="web__text strong">Somos dinámicos, y urbanos. Somos Rastro.</p>
-      </div>
+    <Container fullScreen tag="div" class="fondo-filosofia">
+      <Container tag="section" class="about-filosofia">
+        <div class="about-filosofia__img">
+          <g-image class="img-responsive" src="~/assets/web/img/about/filosofia-about.png" alt="Image About" />
+        </div>
+        <div class="about-filosofia__text">
+          <h2 class="web__subtitle">Nuestra filosofía</h2>
+          <p class="web__text">Impulsamos el movimiento, y el aprendizaje. No nos limitamos, avanzamos con
+            determinación.
+            Creemos que el aprendizaje surge cuando no existe miedo a experimentar.
+            Rastro no es solo la evidencia de que estuvimos, si no de que estamos adelante. Es animarse a más, moverse,
+            transformarse. Ir hacia lo desconocido.</p>
+          <p class="web__text strong">Somos dinámicos, y urbanos. Somos Rastro.</p>
+        </div>
+      </Container>
     </Container>
     <Container tag="section" fullScreen class="about-content">
       <div class="about-content__text-principal">

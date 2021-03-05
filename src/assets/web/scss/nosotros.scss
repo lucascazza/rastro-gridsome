@@ -1,13 +1,4 @@
 .about-banner {
-  padding-bottom: 3rem;
-
-  @media (min-width: 992px) {
-    padding-bottom: 2rem;
-  }
-}
-
-
-.about-banner {
   &__content {
     padding-top: 90px;
     display: flex;
@@ -42,63 +33,60 @@
 
     @media (min-width: 768px) {
       padding-top: 100px;
-      min-height: 100vh;
+      min-height: 60vh;
 
       &--text {
         .web__subtitle {
-          max-width: 400px;
+          max-width: 500px;
+          font-size: 2rem;
 
           span {
-            font-size: 2rem;
+            font-size: 3rem;
           }
         }
       }
     }
 
     @media (min-width: 992px) {
+      min-height: 75vh;
       flex-direction: row;
       padding-top: $headerHeight;
 
       &--text {
-        width: 40%;
+        width: 45%;
         align-items: flex-start;
+        padding-right: 2rem;
 
         .web__subtitle {
           text-align: left;
           max-width: none;
+          font-size: 3rem;
 
           span {
-            font-size: 3rem;
+            font-size: 4rem;
             line-height: 34px;
           }
+        }
+
+        @media (min-width: 1200px) {
+          padding-right: 0rem;
         }
       }
 
       &--img {
-        width: 60%;
+        width: 55%;
       }
     }
 
     @media (min-width: 1200px) {
       .web__subtitle {
-        max-width: 360px;
-        font-size: 2rem;
+        max-width: 500px;
+        font-size: 3.25rem;
+        line-height: 3.25rem;
 
         span {
-          font-size: 4rem;
-          line-height: 44px;
-        }
-      }
-    }
-
-    @media (min-width: 1600px) {
-      .web__subtitle {
-        max-width: 360px;
-        font-size: 2.25rem;
-
-        span {
-          font-size: 4rem;
-          line-height: 48px;
+          font-size: 5rem;
+          line-height: 49px;
         }
       }
     }
@@ -123,8 +111,6 @@
 
 
 .about-filosofia {
-  margin-bottom: 4rem;
-
 
   @media (max-width: 991px) {
     display: flex;
@@ -132,8 +118,6 @@
 
     &__text {
       text-align: center;
-      margin-top: 1rem;
-      margin-bottom: 2rem;
     }
   }
 
@@ -143,21 +127,25 @@
     .web__subtitle {
       text-transform: uppercase;
       margin-bottom: 1rem;
+      color: #232323;
     }
 
     .web__text {
+      color: #666666;
       margin-bottom: .8rem;
+
+      &.strong {
+        color: #232323;
+      }
     }
   }
 
   &__img {
     margin: auto;
-    margin-bottom: 2rem;
     width: 70%;
   }
 
   @media (min-width: 992px) {
-    margin-bottom: 10rem;
     display: flex;
     align-items: center;
 
@@ -167,7 +155,7 @@
     }
 
     &__img {
-      padding-right: 2rem;
+      padding-right: 0rem;
       width: 40%;
       display: flex;
       align-items: center;
@@ -177,20 +165,22 @@
 
   @media (min-width: 1200px) {
     &__text {
-      padding-left: 8rem;
-      width: 70%;
+      padding-left: 4rem;
     }
+  }
 
-    &__img {
-      width: 30%;
+  @media (min-width: 1600px) {
+    &__text {
+      padding-left: 8rem;
     }
   }
 
 }
 
-.about{
+.about {
   padding: 3rem 0;
-  &__card{
+
+  &__card {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -201,12 +191,12 @@
     margin-bottom: 2rem;
     flex-direction: column;
 
-    &--img{
+    &--img {
       width: 60%;
       margin: auto;
       margin-bottom: 1.5rem;
 
-      img{
+      img {
         border-radius: 50% !important;
         overflow: hidden;
         width: 100%;
@@ -217,43 +207,43 @@
       }
     }
 
-    &:hover{
-      .about__card--img{
-        img{
+    &:hover {
+      .about__card--img {
+        img {
           filter: grayscale(.3);
         }
       }
 
-      .about__card--text{
-        .web__text{
-          span{
+      .about__card--text {
+        .web__text {
+          span {
             color: var(--magenta);
           }
         }
       }
     }
 
-    &--text{
+    &--text {
       width: 100%;
       text-align: left;
 
       .web__subtitle,
-        .web__text.strong{
-          text-align: center;
-        }
+      .web__text.strong {
+        text-align: center;
+      }
 
-      .web__subtitle{
+      .web__subtitle {
         color: #232323;
       }
 
-      .web__text{
+      .web__text {
         color: #666666;
 
-        &.strong{
+        &.strong {
           margin-bottom: 1rem;
         }
 
-        span{
+        span {
           font-size: 1rem;
           text-transform: uppercase;
           font-family: 'OswaldBold';
@@ -261,37 +251,38 @@
       }
     }
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
       flex-direction: row;
       padding: 25px 40px;
 
-      &--img{
+      &--img {
         margin-bottom: 0;
       }
 
-      &--text{
+      &--text {
         padding-left: 30px;
-        .web__text{
-  
-          &.strong{
+
+        .web__text {
+
+          &.strong {
             margin-bottom: 1.5rem;
           }
-  
-          span{
+
+          span {
             font-size: 1.6rem;
           }
         }
       }
 
-      &:nth-child(even){
+      &:nth-child(even) {
         flex-direction: row-reverse;
 
-        .about__card--text{
+        .about__card--text {
           padding-left: 0px;
           padding-right: 30px !important;
         }
 
-        .about__card--img{
+        .about__card--img {
           display: flex;
           justify-content: flex-end;
         }
@@ -299,7 +290,7 @@
     }
   }
 
-  @media (min-width: 992px){
+  @media (min-width: 992px) {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -308,38 +299,40 @@
     justify-content: center;
     padding: 4rem 0;
 
-    &__row{
+    &__row {
       width: 50%;
       padding: 0 1rem;
     }
 
-    &__card{
+    &__card {
       flex-direction: column !important;
       align-items: center;
       padding: 20px;
       height: 440px;
       margin-bottom: 2rem;
 
-      &--img{
+      &--img {
         width: 50%;
         margin: initial;
         margin-bottom: 1.25rem;
       }
 
-      &--text{
+      &--text {
         padding: 0;
+
         .web__subtitle,
-        .web__text.strong{
+        .web__text.strong {
           text-align: center;
         }
-        .web__text.strong{
+
+        .web__text.strong {
           margin-bottom: .75rem;
         }
 
-        .web__text:not(.strong){
+        .web__text:not(.strong) {
           font-size: 1.2rem;
 
-          span{
+          span {
             font-size: 1.3rem;
           }
         }
@@ -347,37 +340,38 @@
     }
   }
 
-  @media (min-width: 1200px){
-    &__row{
+  @media (min-width: 1200px) {
+    &__row {
       width: 33.33333%;
     }
 
-    &__card{
+    &__card {
       height: 480px;
-      &--img{
+
+      &--img {
         width: 70%;
       }
 
-      &--text{
-        .web__subtitle{
+      &--text {
+        .web__subtitle {
           font-size: 1.85rem;
         }
       }
     }
   }
 
-  @media (min-width: 1600px){
-    &__row{
+  @media (min-width: 1600px) {
+    &__row {
       width: 33.33333%;
     }
 
-    &__card{
-      &--img{
+    &__card {
+      &--img {
         width: 60%;
       }
 
-      &--text{
-        .web__subtitle{
+      &--text {
+        .web__subtitle {
           font-size: 2rem;
         }
       }
@@ -397,5 +391,28 @@
 
   @media (min-width: 768px) {
     background-image: url(../assets/web/img/fondo-footer.svg);
+  }
+}
+
+.fondo-filosofia {
+  background-image: url(../assets/web/img/about/fondo-about.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 576px) {
+    min-height: 90vh;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 105vh;
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 992px) {
+    min-height: 100vh;
   }
 }
