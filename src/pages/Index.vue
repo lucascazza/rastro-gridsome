@@ -137,7 +137,6 @@
                 cuando no existe miedo a experimentar.</p>
             </div>
             <div class="home-movimiento__content--items">
-              <p class="web__text">Para aprender:</p>
               <div class="movimiento-items">
                 <div class="movimiento-items__item">
                   <div class="movimiento-items__item--img">

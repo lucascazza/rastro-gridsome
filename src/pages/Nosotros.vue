@@ -58,7 +58,7 @@
               </div>
               <div class="about__card--text">
                 <h2 class="web__subtitle">Manu Messina</h2>
-                <p class="web__text strong">Artista VFX - Artista audiovisual</p>
+                <p class="web__text strong">Artista VFX - Audiovisual</p>
                 <p class="web__text">El especialista en efectos visuales, un rol importantísimo para darle <span>vida y
                     magia</span> a nuestras piezas audiovisuales.</p>
               </div>
